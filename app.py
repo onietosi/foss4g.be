@@ -8,6 +8,13 @@ PAGES = ["home", "contact", "sponsors", "volunteers"]
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 
+
+# To inject the base URL into the templates
+@app.context_processor
+def inject_base_url():
+    return dict(base_url=app.config.get("BASE_URL", ""))
+
+
 # Page for choosing the language
 @app.route("/")
 def index():
