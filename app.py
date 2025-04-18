@@ -2,80 +2,31 @@ from flask import Flask, render_template
 
 from translations import get_translations
 
-# UTILISER FLASK STATIC
+LANGUAGES = {"en": "English", "fr": "Français", "nl": "Nederlands"}
 
-# ATTENTION UTILISERL ES LANGUE (choix FR/NL/EN) DANS L'URL
+PAGES = ["home", "contact", "sponsors", "volunteers"]
 
-LANGUAGES = {
-    'en': 'English',
-    'fr': 'Français',
-    'nl': 'Nederlands'
-}
+app = Flask(__name__, static_folder="static", static_url_path="/static")
 
-
-app = Flask(__name__,
-    static_folder='static',
-    static_url_path='/static'
-)
+# Page for choosing the language
+@app.route("/")
+def index():
+    return render_template("choose_your_language.html")
 
 
-@app.route('/')
-@app.route('/<lang>')
-def home(lang='en'):
-    # Get translations for the requested language, default to English
-    translations_page, translations_site = get_translations(lang, page='home')
-
-    print(translations_page)
-    print(translations_site)
+# Generic route for all pages and all the languages
+@app.route("/<lang>/<page>.html")
+def generic_page(lang, page):
+    translations_page, translations_site = get_translations(lang, page=page)
 
     return render_template(
-        'home.html',
+        f"{page}.html",
         page=translations_page,
         site=translations_site,
         lang=lang,
-        languages=LANGUAGES.keys()
+        languages=LANGUAGES.keys(),
     )
 
 
-@app.route('/contact')
-@app.route('/<lang>/contact')
-def contact(lang='en'):
-    translations_page, translations_site = get_translations(lang, page='home')
-
-    return render_template(
-        'contact.html',
-        page=translations_page,
-        site=translations_site,
-        lang=lang,
-        languages=LANGUAGES.keys()
-    )
-
-@app.route('/sponsors')
-@app.route('/<lang>/sponsors')
-def sponsors(lang='en'):
-    translations_page, translations_site = get_translations(lang, page='home')
-
-    return render_template(
-        'sponsors.html',
-        page=translations_page,
-        site=translations_site,
-        lang=lang,
-        languages=LANGUAGES.keys()
-    )
-
-
-@app.route('/volunteers')
-@app.route('/<lang>/volunteers')
-def volunteers(lang='en'):
-    translations_page, translations_site = get_translations(lang, page='home')
-
-    return render_template(
-        'volunteers.html',
-        page=translations_page,
-        site=translations_site,
-        lang=lang,
-        languages=LANGUAGES.keys()
-    )
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)

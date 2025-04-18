@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description }}" />
     <meta name="keywords" content="FOSS4G Geo marker GIS Open Source" />
     <link rel="me" href="https://fosstodon.org/@osgeobe" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css', _external=True) }}">
   </head>
   <body>
     <header id="header">
@@ -16,10 +16,10 @@
       </h1>
       <nav id="nav">
         <ul>
-          <li><a href="/{{lang}}">Home</a></li>
-          <li><a href="/{{lang}}/sponsors">Sponsors</a></li>
-          <li><a href="/{{lang}}/contact">Contact</a></li>
-          <li><a href="/{{lang}}/volunteers">Volunteers</a></li>
+          <li><a href="/{{lang}}/home.html">Home</a></li>
+          <li><a href="/{{lang}}/sponsors.html">Sponsors</a></li>
+          <li><a href="/{{lang}}/contact.html">Contact</a></li>
+          <li><a href="/{{lang}}/volunteers.html">Volunteers</a></li>
           <li>
             <a
               href="https://www.facebook.com/pages/Foss4g-Belgium/863691603712207"
@@ -34,7 +34,7 @@
 
     <section id="banner">
       <img
-        src="{{ url_for('static', filename='images/foss4gbe-g.svg') }}"
+        src="{{ url_for('static', filename='images/foss4gbe-g.svg', _external=True) }} }}"
         alt="{{ site['foss4g_be'] }} - {{ site['not_a_conf'] }}"
       />
     </section>
