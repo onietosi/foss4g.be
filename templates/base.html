@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
   <head>
-    <title>{{ page['name'] }} | {{ site['title'] }}</title>
+    <title>{{ page.name }} | {{ site['title'] }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="{{ page.description }}" />
     <meta name="keywords" content="FOSS4G Geo marker GIS Open Source" />
@@ -11,46 +11,43 @@
   <body>
     <header id="header">
       <h1>
-        <a href="/{{lang}}/home"><span>{{ page['name'] }}</span></a>
-        {{ site['foss4g_be'] }} {{ site['date'] }}
+        <span>{{ page.name }}</span>
+        <a href="{{ base_url }}/{{lang}}/home.html">{{ site['foss4g_be'] }} {{ site['date'] }}</a>
       </h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="{{ base_url }}/{{lang}}/home.html">Home</a></li>
-          <li><a href="{{ base_url }}/{{lang}}/sponsors.html">Sponsors</a></li>
-          <li><a href="{{ base_url }}/{{lang}}/contact.html">Contact</a></li>
-          <li><a href="{{ base_url }}/{{lang}}/volunteers.html">Volunteers</a></li>
-          <li>
-            <a
-              href="https://www.facebook.com/pages/Foss4g-Belgium/863691603712207"
-              target="_blank"
-              title="Facebook"
-              >Facebook</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div id="header-content-link">
+        <nav id="nav">
+          <ul>
+            <li><a href="{{ base_url }}/{{lang}}/home.html">Home</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/sponsors.html">Sponsors</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/volunteers.html">Volunteers</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/previous_editions.html">Previous editions</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/previous_sponsors.html">Previous sponsors</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/about_us.html">About us</a></li>
+            <li><a href="{{ base_url }}/{{lang}}/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div id="lang">
+          <a href="{{ base_url }}/nl/home.html">NL</a>
+          <a href="{{ base_url }}/fr/home.html">FR</a>
+          <a href="{{ base_url }}/en/home.html">EN</a>
+        </div>
+      </div>
     </header>
 
-    <section id="banner">
-      <img
-        src="{{ url_for('static', filename='images/foss4gbe-g.svg', _external=True) }}"
-        alt="{{ site['foss4g_be'] }} - {{ site['not_a_conf'] }}"
-      />
-    </section>
-
-    <main>{% block main %} BASE {% endblock %}</main>
+    <main>{% block main %}BLOCK MAIN CONTENT{% endblock %}</main>
 
     <section id="thanks">
       <p>
         {{ site['only_possible'] }}
-        <a href="/{{lang}}/sponsors">{{ site['partners_and_sponsors'] }}</a>.
+        <a href="{{ base_url }}/{{lang}}/sponsors.html">{{ site['partners_and_sponsors'] }}</a>.
       </p>
       <p></p>
       <p>
-        {{ site['more_info'] }}<a href="/{{lang}}/contact"
-          >{{ site['contact_us'] }}</a
-        >
+        {{ site['more_info'] }}
+        <a href="{{ base_url }}/{{lang}}/contact.html">
+          {{ site['contact_us'] }}
+        </a>
       </p>
     </section>
 

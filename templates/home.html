@@ -2,5 +2,10 @@
 {% extends 'base.html' %}
 
 {% block main %}
-HOME
+<section id="banner">
+    <img
+      src="{{ url_for('static', filename='images/foss4gbe-g.svg', _external=True) }}"
+      alt="{{ site['foss4g_be'] }} - {{ site['not_a_conf'] }}"
+    />
+  </section>
 {% endblock %}

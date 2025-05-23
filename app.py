@@ -4,7 +4,15 @@ from translations import get_translations
 
 LANGUAGES = {"en": "English", "fr": "Français", "nl": "Nederlands"}
 
-PAGES = ["home", "contact", "sponsors", "volunteers"]
+PAGES = [
+    "home",
+    "sponsors",
+    "volunteers",
+    "previous_editions",
+    "previous_sponsors",
+    "about_us",
+    "contact",
+]
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 

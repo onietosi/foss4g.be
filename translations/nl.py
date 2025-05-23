@@ -1,74 +1,58 @@
 from .var import year, day
 
-month = 'September'
-belgium = 'België'
-foss4g_be = f'FOSS4G {belgium.capitalize()}'
+month = "September"
+belgium = "België"
+foss4g_be = f"FOSS4G {belgium.capitalize()}"
 
 translations_site = {
-    'year': f'{year}',
-    'date': f'{day} {month} {year}',
-    'title': f'{foss4g_be} - {year}',
-    'foss4g_be': f'{foss4g_be}',
-    'description': 'FOSS4G België is een gemeenschap van Free and Open Source Software voor Geospatial enthousiastelingen in België.',
-    'keywords': 'Foss4G Geo GIS Open Source OSGeo OSGeoBE België Nederland',
-    'copyright': '© {year} FOSS4G België. Alle rechten voorbehouden.',
-    'not_a_conf': 'This is not a conference',
-    'only_possible': f'{foss4g_be} is only possible thanks to the support of',
-    'partners_and_sponsors': f'our partners and sponsors',
-    'more_info': 'If you want more information',
-    'contact_us': 'contact us',
+    "year": f"{year}",
+    "date": f"{day} {month} {year}",
+    "title": f"{foss4g_be} - {year}",
+    "foss4g_be": f"{foss4g_be}",
+    "description": "FOSS4G België is een gemeenschap van Free and Open Source Software voor Geospatial enthousiastelingen in België.",
+    "keywords": "Foss4G Geo GIS Open Source OSGeo OSGeoBE België Nederland",
+    "copyright": f"© {year} FOSS4G België. Alle rechten voorbehouden.",
+    "not_a_conf": "This is not a conference",
+    "only_possible": f"{foss4g_be} is only possible thanks to the support of",
+    "partners_and_sponsors": f"our partners and sponsors",
 }
 
 
 translations_page = {
-    'home': {
-        'name': 'Welkom',
-        'banner': {
-            'title': 'Welkom bij FOSS4G België',
-            'subtitle': 'Sluit je aan bij onze gemeenschap van Free and Open Source Software voor Geospatial'
-        },
-        'cta': {
-            'title': 'Word Lid van Onze Gemeenschap',
-            'description': 'Maak contact met andere FOSS4G enthousiastelingen in België en blijf op de hoogte van het laatste nieuws en evenementen.',
-            'button': 'Word Lid'
-        }
+    "home": {
+        "name": "Home",
     },
-    'sponsors': {
-        'name': 'Sponsors',
+    "sponsors": {
+        "title": "Onze Sponsors",
+        "name": "Sponsors",
+        "looking_for_sponsors": "Wij zijn op zoek naar sponsors om dit geweldige evenement, FOSS4G België, te financieren. Als u geïnteresseerd bent, neem dan contact met ons op.",
     },
-    'volonteers': {
-        'name': 'Bénévoles',
+    "volunteers": {
+        "title": "Op zoek naar Vrijwilligers",
+        "name": "Vrijwilligers",
+        "looking_for_volunteers": "We zijn op zoek naar vrijwilligers om ons te helpen met de organisatie van FOSS4G België. Als je geïnteresseerd bent, neem dan contact met ons op.",
     },
-    'about': {
-        'title': 'Over FOSS4G België',
-        'description': 'Lees meer over onze gemeenschap en missie.',
-        'mission': {
-            'title': 'Onze Missie',
-            'content': 'FOSS4G België streeft ernaar het gebruik van Free and Open Source Software voor Geospatial toepassingen in België te bevorderen. We organiseren evenementen, workshops en bieden hulpmiddelen voor zowel beginners als experts.'
-        },
-        'team': {
-            'title': 'Ons Team',
-            'content': 'Ons team bestaat uit gepassioneerde vrijwilligers die zich inzetten voor de promotie van FOSS4G in België.'
-        }
+    "previous_editions": {
+        "title": "Onze Vorige Edities",
+        "name": "Vorige Edities",
+        "content": "FOSS4G-be wordt al vele jaren georganiseerd. Hier is de lijst van eerdere edities: ",
     },
-    'contact': {
-        'title': 'Neem Contact Op',
-        'description': 'Neem contact op met de FOSS4G België gemeenschap.',
-        'form': {
-            'name': 'Naam',
-            'email': 'E-mail',
-            'message': 'Bericht',
-            'submit': 'Verstuur Bericht'
-        },
-        'success': 'Bedankt voor je bericht! We nemen zo spoedig mogelijk contact met je op.',
-        'error': 'Er is een fout opgetreden bij het versturen van je bericht. Probeer het later opnieuw.'
+    "previous_sponsors": {
+        "title": "Bedankt!",
+        "name": "Vorige Sponsors",
+        "content": "Dank aan onze vorige sponsors zonder wie dit avontuur niet mogelijk zou zijn geweest.",
     },
-    'footer': {
-        'links': {
-            'home': 'Home',
-            'about': 'Over',
-            'events': 'Evenementen',
-            'contact': 'Contact'
-        }
-    }
+    "about_us": {
+        "name": "Over Ons",
+        "title": "Wie zijn wij?",
+        "content": """<p>Wij zijn het Belgische hoofdstuk van de Open Source Geospatial Foundation (OSGeo).</p>
+<p>OSGeo is een non-profitorganisatie die zich inzet voor de ondersteuning van de ontwikkeling van open source geospatiale software en de promotie van hun gebruik. De stichting biedt financiële, organisatorische en juridische ondersteuning aan de open source geospatiale gemeenschap in brede zin. Het fungeert ook als een onafhankelijke juridische entiteit waaraan leden van de gemeenschap kunnen bijdragen met code, financiering en andere middelen, in de wetenschap dat hun bijdragen zullen worden bewaard voor het publieke belang. OSGeo fungeert ook als een organisatie voor bewustwording en pleitbezorging voor de open source geospatiale gemeenschap en biedt een gemeenschappelijk forum en gedeelde infrastructuur om de samenwerking tussen projecten te verbeteren.</p>
+<p>De projecten van de stichting zijn allemaal vrij beschikbaar en bruikbaar onder een open source licentie die door de OSI is gecertificeerd.</p>
+""",
+    },
+    "contact": {
+        "name": "Contact",
+        "title": "Neem Contact Op",
+        "content": "Voor vragen kunt u een e-mail sturen naar info@foss4g.be",
+    },
 }
