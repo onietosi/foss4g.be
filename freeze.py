@@ -3,8 +3,7 @@ from flask_frozen import Freezer
 from app import app, LANGUAGES, PAGES
 
 # Set the base URL for the frozen site
-app.config["FREEZER_BASE_URL"] = "https://osgeo-be.github.io/foss4g.be"
-app.config["BASE_URL"] = "https://2025/foss4g.be/"
+app.config["FREEZER_BASE_URL"] = "https://2025.foss4g.be/"
 
 freezer = Freezer(app)
 
