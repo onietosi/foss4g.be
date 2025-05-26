@@ -12,25 +12,25 @@
     <header id="header">
       <h1>
         <span>{{ page.name }}</span>
-        <a href="{{ base_url }}/{{lang}}/home.html">{{ site['foss4g_be'] }} {{ site['date'] }}</a>
+        <a href="{{ url_for('generic_page', lang=lang, page='home') }}">{{ site['foss4g_be'] }} {{ site['date'] }}</a>
       </h1>
       <div id="header-content-link">
         <nav id="nav">
           <ul>
-            <li><a href="{{ base_url }}/{{lang}}/home.html">Home</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/sponsors.html">Sponsors</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/volunteers.html">Volunteers</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/previous_editions.html">Previous editions</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/previous_sponsors.html">Previous sponsors</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/about_us.html">About us</a></li>
-            <li><a href="{{ base_url }}/{{lang}}/contact.html">Contact</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='home') }}">Home</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='sponsors') }}">Sponsors</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='volunteers') }}">Volunteers</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='previous_editions') }}"">Previous editions</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='previous_sponsors') }}"">Previous sponsors</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='about_us') }}"">About us</a></li>
+            <li><a href="{{ url_for('generic_page', lang=lang, page='contact') }}"">Contact</a></li>
           </ul>
         </nav>
 
         <div id="lang">
-          <a href="{{ base_url }}/nl/home.html">NL</a>
-          <a href="{{ base_url }}/fr/home.html">FR</a>
-          <a href="{{ base_url }}/en/home.html">EN</a>
+          <a href="{{ url_for('generic_page', lang='nl', page='home') }}">NL</a>
+          <a href="{{ url_for('generic_page', lang='fr', page='home') }}">FR</a>
+          <a href="{{ url_for('generic_page', lang='en', page='home') }}">EN</a>
         </div>
       </div>
     </header>
@@ -40,12 +40,12 @@
     <section id="thanks">
       <p>
         {{ site['only_possible'] }}
-        <a href="{{ base_url }}/{{lang}}/sponsors.html">{{ site['partners_and_sponsors'] }}</a>.
+        <a href="{{ url_for('generic_page', lang=lang, page='sponsors') }}">{{ site['partners_and_sponsors'] }}</a>.
       </p>
       <p></p>
       <p>
         {{ site['more_info'] }}
-        <a href="{{ base_url }}/{{lang}}/contact.html">
+        <a href="{{ url_for('generic_page', lang=lang, page='contact') }}">
           {{ site['contact_us'] }}
         </a>
       </p>
