@@ -10,9 +10,9 @@
   <body>
 
     <div class="lang-links">
-      <a class="lang-link" href="{{ base_url }}/nl/home.html">NL</a>
-      <a class="lang-link" href="{{ base_url }}/fr/home.html">FR</a>
-      <a class="lang-link" href="{{ base_url }}/en/home.html">EN</a>
+      <a href="{{ url_for('generic_page', lang='nl', page='home') }}">NL</a>
+      <a href="{{ url_for('generic_page', lang='fr', page='home') }}">FR</a>
+      <a href="{{ url_for('generic_page', lang='en', page='home') }}">EN</a>
     </div>
 
 
@@ -23,8 +23,8 @@
     />
 
     <div class="lang-links">
-      <a class="lang-link" href="{{ base_url }}/nl/home.html">NL</a>
-      <a class="lang-link" href="{{ base_url }}/fr/home.html">FR</a>
-      <a class="lang-link" href="{{ base_url }}/en/home.html">EN</a>
+      <a href="{{ url_for('generic_page', lang='nl', page='home') }}">NL</a>
+      <a href="{{ url_for('generic_page', lang='fr', page='home') }}">FR</a>
+      <a href="{{ url_for('generic_page', lang='en', page='home') }}">EN</a>
     </div>
 </html>
