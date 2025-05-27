@@ -17,20 +17,20 @@
       <div id="header-content-link">
         <nav id="nav">
           <ul>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='home', _external=True) }}">Home</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='sponsors', _external=True) }}">Sponsors</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='volunteers', _external=True) }}">Volunteers</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='previous_editions', _external=True) }}">Previous editions</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='previous_sponsors', _external=True) }}">Previous sponsors</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='about_us', _external=True) }}">About us</a></li>
-            <li><a href="{{ url_for('generic_page', lang=lang, page='contact', _external=True) }}">Contact</a></li>
+            <li><a class="{% if page_id == 'home'              %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='home', _external=True) }}">Home</a></li>
+            <li><a class="{% if page_id == 'sponsors'          %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='sponsors', _external=True) }}">Sponsors</a></li>
+            <li><a class="{% if page_id == 'volunteers'        %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='volunteers', _external=True) }}">Volunteers</a></li>
+            <li><a class="{% if page_id == 'previous_editions' %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='previous_editions', _external=True) }}">Previous editions</a></li>
+            <li><a class="{% if page_id == 'previous_sponsors' %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='previous_sponsors', _external=True) }}">Previous sponsors</a></li>
+            <li><a class="{% if page_id == 'about_us'          %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='about_us', _external=True) }}">About us</a></li>
+            <li><a class="{% if page_id == 'contact'           %}selected{% endif %}" href="{{ url_for('generic_page', lang=lang, page='contact', _external=True) }}">Contact</a></li>
           </ul>
         </nav>
 
         <div id="lang">
-          <a href="{{ url_for('generic_page', lang='nl', page='home', _external=True) }}">NL</a>
-          <a href="{{ url_for('generic_page', lang='fr', page='home', _external=True) }}">FR</a>
-          <a href="{{ url_for('generic_page', lang='en', page='home', _external=True) }}">EN</a>
+          <a href="{{ url_for('generic_page', lang='nl', page=page_id, _external=True) }}">NL</a>
+          <a href="{{ url_for('generic_page', lang='fr', page=page_id, _external=True) }}">FR</a>
+          <a href="{{ url_for('generic_page', lang='en', page=page_id, _external=True) }}">EN</a>
         </div>
       </div>
     </header>

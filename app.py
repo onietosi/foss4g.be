@@ -36,6 +36,7 @@ def generic_page(lang, page):
 
     return render_template(
         f"{page}.html",
+        page_id=page,
         page=translations_page,
         site=translations_site,
         lang=lang,
