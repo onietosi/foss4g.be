@@ -24,7 +24,7 @@ jobs:
 
       # ADD CNAME file to the root of the build directory
       - name: Add CNAME file
-        run: echo "2025.foss4g.be" > ./build/CNAME
+        run: echo "www.foss4g.be" > ./build/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
