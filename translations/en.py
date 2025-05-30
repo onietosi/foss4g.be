@@ -1,6 +1,6 @@
 from .var import year, day
 
-month = "Septembre"
+month = "September"
 belgium = "Belgium"
 foss4g_be = f"FOSS4G {belgium.capitalize()}"
 
