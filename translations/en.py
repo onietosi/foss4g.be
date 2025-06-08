@@ -15,6 +15,9 @@ translations_site = {
     "not_a_conf": "This is not a conference",
     "only_possible": f"{foss4g_be} is only possible thanks to the support of",
     "partners_and_sponsors": f"our partners and sponsors",
+    "bronze": "bronze",
+    "silver": "silver",
+    "gold": "gold",
 }
 
 translations_page = {
@@ -25,6 +28,19 @@ translations_page = {
         "title": "Our Sponsors",
         "name": "Sponsors",
         "looking_for_sponsors": "We are looking for sponsors to fund this amazing event known as FOSS4G Belgium. If you are interested, please get in touch with us.",
+        "level": "level",
+        "price": "price",
+        "stand": "presentation stand",
+        "page_in_pgm": "page in the program booklet",
+        "main_page_logo": "logo on the main page of the website",
+        "sponsor_page_logo": "logo on the sponsors page of the website",
+        "participant_list": "participant list",
+        "page": "page",
+        "level_and_advantages_title": "Levels and Advantages",
+        "level_and_advantages_desc": """
+<p><b>Presentation Stand</b>: A spot with a table, two chairs, and a power outlet.</p>
+<p><b>Page in the Program Booklet</b>: Our sponsors must provide us with their logo, image, and text by August 25, 2025.</p>
+""",
     },
     "volunteers": {
         "title": "Looking for Volunteers",
