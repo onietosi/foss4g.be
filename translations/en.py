@@ -24,6 +24,19 @@ translations_page = {
     "home": {
         "name": "Home",
     },
+    "about_us": {
+        "name": "About Us",
+        "title": "Who are we?",
+        "content": """<p>We are the Belgian chapter of the Open Source Geospatial Foundation (OSGeo).</p>
+<p>OSGeo is a non-profit organization dedicated to supporting the development of open source geospatial software and promoting their use. The foundation provides financial, organizational, and legal support to the open source geospatial community at large. It also serves as an independent legal entity to which members of the community can contribute code, funding, and other resources, with the assurance that their contributions will be preserved for the public good. OSGeo also acts as an outreach and advocacy organization for the open source geospatial community and provides a common forum and shared infrastructure to improve collaboration between projects.</p>
+<p>The foundation's projects are all freely available and usable under an open source license certified by the OSI.</p>
+""",
+    },
+    "call_for_presentations": {
+        "name": "Call for Presentations",
+        "title": "Call for Presentations",
+        "content": """TODO""",
+    },
     "sponsors": {
         "title": "Our Sponsors",
         "name": "Sponsors",
@@ -56,14 +69,6 @@ translations_page = {
         "title": "Thank You!",
         "name": "Previous Sponsors",
         "content": "Thanks to our previous sponsors without whom this adventure would not have been possible.",
-    },
-    "about_us": {
-        "name": "About Us",
-        "title": "Who are we?",
-        "content": """<p>We are the Belgian chapter of the Open Source Geospatial Foundation (OSGeo).</p>
-<p>OSGeo is a non-profit organization dedicated to supporting the development of open source geospatial software and promoting their use. The foundation provides financial, organizational, and legal support to the open source geospatial community at large. It also serves as an independent legal entity to which members of the community can contribute code, funding, and other resources, with the assurance that their contributions will be preserved for the public good. OSGeo also acts as an outreach and advocacy organization for the open source geospatial community and provides a common forum and shared infrastructure to improve collaboration between projects.</p>
-<p>The foundation's projects are all freely available and usable under an open source license certified by the OSI.</p>
-""",
     },
     "contact": {
         "name": "Contact Us",

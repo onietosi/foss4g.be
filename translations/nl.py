@@ -25,6 +25,19 @@ translations_page = {
     "home": {
         "name": "Home",
     },
+    "about_us": {
+        "name": "Over Ons",
+        "title": "Wie zijn wij?",
+        "content": """<p>Wij zijn de Belgische afdeling van de Open Source Geospatial Foundation (OSGeo).</p>
+<p>OSGeo is een non-profitorganisatie die zich inzet voor de ondersteuning van de ontwikkeling van open source geospatiale software en de promotie van hun gebruik. De stichting biedt financiële, organisatorische en juridische ondersteuning aan de open source geospatiale gemeenschap in brede zin. Het fungeert ook als een onafhankelijke juridische entiteit waaraan leden van de gemeenschap kunnen bijdragen met code, financiering en andere middelen, in de wetenschap dat hun bijdragen zullen worden bewaard voor het publieke belang. OSGeo fungeert ook als een organisatie voor bewustwording en pleitbezorging voor de open source geospatiale gemeenschap en biedt een gemeenschappelijk forum en gedeelde infrastructuur om de samenwerking tussen projecten te verbeteren.</p>
+<p>De projecten van de stichting zijn allemaal vrij beschikbaar en bruikbaar onder een open source licentie die door de OSI is gecertificeerd.</p>
+""",
+    },
+    "call_for_presentations": {
+        "name": "Call for Presentations",
+        "title": "Call for Presentations",
+        "content": """TODO""",
+    },
     "sponsors": {
         "title": "Onze Sponsors",
         "name": "Sponsors",
@@ -57,14 +70,6 @@ translations_page = {
         "title": "Bedankt!",
         "name": "Vorige Sponsors",
         "content": "Dank aan onze vorige sponsors zonder wie dit avontuur niet mogelijk zou zijn geweest.",
-    },
-    "about_us": {
-        "name": "Over Ons",
-        "title": "Wie zijn wij?",
-        "content": """<p>Wij zijn de Belgische afdeling van de Open Source Geospatial Foundation (OSGeo).</p>
-<p>OSGeo is een non-profitorganisatie die zich inzet voor de ondersteuning van de ontwikkeling van open source geospatiale software en de promotie van hun gebruik. De stichting biedt financiële, organisatorische en juridische ondersteuning aan de open source geospatiale gemeenschap in brede zin. Het fungeert ook als een onafhankelijke juridische entiteit waaraan leden van de gemeenschap kunnen bijdragen met code, financiering en andere middelen, in de wetenschap dat hun bijdragen zullen worden bewaard voor het publieke belang. OSGeo fungeert ook als een organisatie voor bewustwording en pleitbezorging voor de open source geospatiale gemeenschap en biedt een gemeenschappelijk forum en gedeelde infrastructuur om de samenwerking tussen projecten te verbeteren.</p>
-<p>De projecten van de stichting zijn allemaal vrij beschikbaar en bruikbaar onder een open source licentie die door de OSI is gecertificeerd.</p>
-""",
     },
     "contact": {
         "name": "Contact",

@@ -1,12 +1,13 @@
 from flask import Flask, render_template
 
-from translations import get_translations
+from translations import get_translations, get_translated_page_names
 
 LANGUAGES = {"en": "English", "fr": "Français", "nl": "Nederlands"}
 
-PAGES = [
+PAGES = [  # List of the id of the pages
     "home",
     "sponsors",
+    'call_for_presentations',
     "volunteers",
     "previous_editions",
     "previous_sponsors",
@@ -36,6 +37,7 @@ def generic_page(lang, page):
 
     return render_template(
         f"{page}.html",
+        pages_with_name=get_translated_page_names(PAGES, lang),
         page_id=page,
         page=translations_page,
         site=translations_site,
