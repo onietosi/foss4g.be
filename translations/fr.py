@@ -35,7 +35,41 @@ translations_page = {
     "call_for_presentations": {
         "name": "Appel à présentations",
         "title": "Appel à présentations",
-        "content": """TODO""",
+        "content": """
+<p><b>Participez au succès de l'édition 2025. Soumettez votre proposition avant le 21 juillet 2025!</b></p>
+<p>Nous visons une grande variété d’intervenants : technologie, science, utilisateurs finaux et usages intéressants (ou particuliers). Nous aimerions en faire une autre conférence avec un haut degré de diversité, tant dans les sujets que dans les personnes.</p>
+<p>Quelques considérations sur les présentations:<p>
+<ul>
+  <li>Les présentations durent 25 minutes, y compris une courte session de questions-réponses, alors préparez-vous bien pendant 20 minutes.</li>
+  <li>Expliquez clairement ce que vous voulez dire.</li>
+  <li>Concentrez-vous sur le message (ou l'histoire) le plus important que vous souhaitez transmettre à votre public.</li>
+</ul>
+<p>C'est court ? Oui, mais cela reste passionnant et varié. Ensuite, vous aurez tout le temps de discuter (autour d'un verre) et d'engager des discussions. Et avouons-le, c'est plus amusant si vous laissez quelqu'un rentrer chez lui émerveillé par les nouvelles choses qu'il a vues...</p>
+<h3>Sujets possibles</h3>
+<ul>
+  <li>Quoi de neuf dans le monde OSGeo?</li>
+  <li>Comment utilisez-vous les outils SIG open source (QGIS, PostGIS, gdal, Proj, MapGuide, Mapproxy, etc.)?</li>
+  <li>Comment stockez-vous, traitez-vous et/ou diffusez-vous vos données spatiales sur le web?</li>
+  <li>Comment les outils open source vous permettent-ils de mettre en œuvre des solutions SIG avec succès?</li>
+  <li>Comment construire une solution open source efficace?</li>
+  <li>Comment gérez-vous les solutions géospatiales avec des outils open source?</li>
+  <li>Comment utilisez-vous les données géospatiales ouvertes? Comment utilisez-vous OpenStreetMap ou d'autres données ouvertes dans votre travail? Avez-vous créé une application intéressante avec des données ouvertes? Êtes-vous un passionné d'OpenStreetMap et souhaitez-vous discuter des spécificités d'OSM?</li>
+  <li>Comment les gouvernements, entreprises, enseignants et chercheurs utilisent-ils la géomatique Open Source?</li>
+  <li>Quels sont les problèmes et les opportunités rencontrés lors de la migration d'un logiciel commercial vers un logiciel open source ?</li>
+  <li>Autres sujets SIG open source et FOSS4G non mentionnés ci-dessus.</li>
+</ul>
+<h3>Format des présentations</h3>
+<p>Les présentations se tiendront en anglais, le néerlandais ou le français. Chaque présentation disposera de 20 minutes et de 5 minutes pour les questions/réponses. Les propositions peuvent être soumises en néerlandais, en français ou en anglais.</p>
+<h3>Soumettre votre présentation</h3>
+<p>Les présentations peuvent être soumises en utilisant <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsFUSFvC8j9vrIIGVjlYshRHLIgRMtKdjiF2V2DagdtWxDmQ/viewform" target="_blank">ce formulaire</a>.<p>
+<h3>Date limite</h3>
+<p>La date limite de soumission est le 21 juillet 2025, mais nous invitons les présentateurs à soumettre leurs propositions dès que possible. Les propositions seront évaluées par le Comité du programme et les auteurs seront informés si leur contribution a été acceptée.</p>
+<h3>Critère d'évaluation</h3>
+<p>Le choix des présentations sera basé sur la qualité des propositions soumises, leur pertinence pour le public et leur place dans le programme. Le choix du comité de programme est définitif et contraignant. Les décisions du comité de programme ne reflètent l'opinion d'aucun employeur des membres.</p>
+<h3>Des questions?</h3>
+<p>Si vous avez des questions sur la soumission d'une proposition de présentation, veuillez contacter presentation@foss4g.be.</p>
+"""
+
     },
     "sponsors": {
         "name": "Sponsors",  # nom de la page affiché dans le menu
