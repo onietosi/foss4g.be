@@ -86,7 +86,7 @@ onUnmounted(() => clearInterval(timer))
                 <div class="bg-off-white rounded-xl shadow overflow-hidden flex flex-col sm:flex-row">
                     <div class="w-full sm:w-2/5 h-40 sm:h-auto">
                         <img
-                            src="/images/call.png"
+                            src="/images/megaphone.png"
                             alt="Megaphone"
                             class="w-full h-full object-contain p-4"
                         />
@@ -98,7 +98,7 @@ onUnmounted(() => clearInterval(timer))
                         </p>
                         <NuxtLink
                             to="/submit"
-                            class="flex justify-center border-2 border-primary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
+                            class="flex justify-center border-2 border-primary hover:border-secondary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-secondary hover:text-white transition text-sm"
                         >
                             {{ $t('cards.callForTopics.button') }}
                         </NuxtLink>
@@ -114,7 +114,7 @@ onUnmounted(() => clearInterval(timer))
                     </ul>
                     <NuxtLink
                         to="/schedule"
-                        class="mt-4 inline-block bg-accent hover:bg-primary-dark text-off-white font-semibold px-4 py-2 rounded-lg hover:bg-accent-dark transition text-sm self-start"
+                        class="mt-4 inline-block bg-accent-dark hover:bg-gold text-off-white hover:text-black font-semibold px-4 py-2 rounded-lg transition text-sm self-start"
                     >
                         {{ $t('cards.schedulePreview.button') }}
                     </NuxtLink>
@@ -127,7 +127,7 @@ onUnmounted(() => clearInterval(timer))
                         <p class="text-sm text-neutral mb-4">{{ $t('cards.callForSponsors.description') }}</p>
                         <NuxtLink
                             to="/sponsors"
-                            class="flex justify-center border-2 border-neutral text-neutral font-semibold px-4 py-2 rounded-lg hover:bg-gold hover:text-black hover:border-yellow-500 transition text-sm"
+                            class="flex justify-center border-2 border-neutral text-neutral font-semibold px-4 py-2 rounded-lg hover:bg-secondary hover:text-off-white hover:border-secondary transition text-sm"
                         >
                             {{ $t('cards.callForSponsors.button') }}
                         </NuxtLink>
@@ -143,6 +143,13 @@ onUnmounted(() => clearInterval(timer))
 
                 <!-- Volunteers -->
                 <div class="bg-off-white px-2 rounded-xl shadow overflow-hidden flex flex-col sm:flex-row">
+                    <div class="w-full sm:w-1/3 h-40 sm:h-auto">
+                        <img
+                            src="/images/volunteer-image.png"
+                            alt="Handshake icon"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
                     <!-- Text panel -->
                     <div class="p-5 flex flex-col justify-center flex-1">
                         <h2 class="text-lg font-bold mb-2">
@@ -153,19 +160,13 @@ onUnmounted(() => clearInterval(timer))
                         </p>
                         <NuxtLink
                             to="/volunteer"
-                            class="flex justify-center border-2 border-danger text-danger font-semibold px-4 py-2 rounded-lg hover:bg-danger hover:text-white transition text-sm"
+                            class="flex justify-center border-2 border-primary hover:border-secondary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-secondary hover:text-white transition text-sm"
                         >
                             <span>{{ $t('cards.volunteers.button') }}</span>
                         </NuxtLink>
                     </div>
 
-                    <div class="w-full sm:w-2/5 h-40 sm:h-auto">
-                        <img
-                            src="/images/handshake.png"
-                            alt="Handshake icon"
-                            class="w-full h-full object-contain"
-                        />
-                    </div>
+
                 </div>
             </section>
 

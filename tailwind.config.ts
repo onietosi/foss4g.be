@@ -16,13 +16,21 @@ module.exports = {
         },
         extend: {
             colors: {
-                /** greens */
-                primary: '#5CAB23',        // FOSS green
-                'primary-dark': '#297D29', // “4G” dark green
+                map: '#e2c6a0',
+                'map-dark': '#c6a77f',
+                primary: '#7a5c3e',
+                'primary-dark': '#5a3f27',
+                accent: '#d0b67b',
+                'accent-dark': '#b89c5f',
+                secondary: '#5CAB23', // FOSS4G green
+                'secondary-dark': '#297D29',
+                'text-main': '#3b2e20',
+                'text-muted': '#7e6b53',
+                'btn-base': '#a7794e',
+                'btn-hover': '#925f39',
+                'border-default': '#bfa078',
                 /** grey */
                 neutral: '#7C7C7C',        // BELGIUM grey
-                /** lime accent */
-                accent: '#6DBE47',         // 2025 lime
                 /** yellow/red highlights */
                 warning: '#F2C100',        // n’est yellow
                 danger: '#B72A2A',         // conférence red
