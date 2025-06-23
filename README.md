@@ -80,3 +80,12 @@ npm run generate
 Any improvements, fixes, or enhancements are very welcome!
 Simply push your changes to this branch;
 
+### Add translations
+To add translations, add them in the `locales` folder.
+If the translation key doesn't exist yet, you'll need to add it in the three different languages: `en`, `fr`, and `nl` but also in the template files in the `pages` folder.
+
+### Add a sponsor
+To add a sponsor:
+- add the logo in the `public/sponsors` folder
+- add a record in the `sponsors` variable in the `pages/sponsors.vue` file
+
