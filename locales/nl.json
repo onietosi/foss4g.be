@@ -1,0 +1,93 @@
+{
+  "head": {
+    "title": "FOSS4G Belgïe 2025"
+  },
+  "about": {
+    "title": "Over FOSS4G",
+    "teaser": "Sluit je op 25 september 2025 in Brussel aan bij onze eendaagse conferentie met keynotes, praktische workshops en netwerkmogelijkheden rond open-source geospatiale tools.",
+    "features": {
+      "keynotes": "Keynotes & Presentaties",
+      "workshops": "Praktische Workshops",
+      "networking": "Community Netwerken",
+      "openSource": "Open-Source Hulpmiddelen"
+    },
+    "learnMore": "Meer Informatie"
+  },
+  "cards": {
+    "callForTopics": {
+      "title": "Oproep voor Onderwerpen",
+      "description": "Presentaties gezocht over open-source geospatiale onderwerpen. (Deadline: 21 juli 2025)",
+      "button": "Inzenden"
+    },
+    "schedulePreview": {
+      "title": "Programma Preview",
+      "day1Label": "Dag 1:",
+      "day1Items": "Welkom, Keynote, Lunch",
+      "day2Label": "Dag 2:",
+      "day2Items": "Workshops, Presentaties",
+      "button": "Volledig Programma"
+    },
+    "callForSponsors": {
+      "title": "Werving Sponsors",
+      "description": "Ondersteun FOSS4G Belgium 2025 en vergroot uw zichtbaarheid binnen de open-source geospatiale community.",
+      "button": "Sponsor Worden"
+    },
+    "volunteers": {
+      "title": "Vrijwilliger Worden",
+      "description": "Lever uw vaardigheden en energie om van FOSS4G Belgium 2025 een succes te maken.",
+      "button": "Doe Mee"
+    }
+  },
+  "countdown": {
+    "days": "Dagen",
+    "hours": "Uren",
+    "minutes": "Minuten",
+    "seconds": "Seconden"
+  },
+  "sponsors": {
+    "hero": {
+      "title": "Oproep aan Sponsors",
+      "description": "Wij zoeken sponsors om dit fantastische evenement te ondersteunen."
+    },
+    "tiers": {
+      "gold": {
+        "title": "Goud",
+        "price": "€1.500",
+        "features": [
+          "Presentatiestand",
+          "Programmapagina",
+          "Logo op hoofdpagina"
+        ],
+        "cta": "Word Goudsponsor"
+      },
+      "silver": {
+        "title": "Zilver",
+        "price": "€750",
+        "features": [
+          "Programmapagina",
+          "Logo op sponsorspagina"
+        ],
+        "cta": "Word Zilversponsor"
+      },
+      "bronze": {
+        "title": "Brons",
+        "price": "€250",
+        "features": [
+          "Logo op sponsorspagina",
+          "Deelnemerslijst"
+        ],
+        "cta": "Word Bronsponsor"
+      }
+    },
+    "support": {
+      "title": "Steun FOSS4G Belgium 2025",
+      "description": "Vergroot je zichtbaarheid binnen de open-source georuimtelijke gemeenschap door ons topevenement te sponsoren.",
+      "cta": "Word Sponsor"
+    },
+    "footer": {
+      "thankYou": "Dank aan onze sponsors",
+      "subtext": "Uw steun maakt FOSS4G Belgium 2025 mogelijk!"
+    }
+  }
+}
+

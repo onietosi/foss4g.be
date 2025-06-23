@@ -2,7 +2,7 @@ name: Freeze and Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ b2025 ]
+    branches: [ b2025-2 ]
 
 permissions:
   contents: write

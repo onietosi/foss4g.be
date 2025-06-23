@@ -9,18 +9,74 @@ To run this site on your own computer you need php and for most years mysql. You
 
 ## How to build the 2025 website
 
-### Install UV
+This project is built with Nuxt 3 and Tailwind CSS. It generates a static, mobile-first, bento-grid–style site for the FOSS4G Belgium conference.
 
-https://docs.astral.sh/uv/getting-started/installation/
+### 🚀 Prerequisites
+- Node.js ≥ 22.x (LTS recommended—see https://nodejs.org/)
+- npm (comes with Node.js)
+- Git for cloning
 
-### Run the website in development mode
-
-```bash
-uv run app.py
-```
-
-### Freeze the website
+🛠️ Setup
+1. Clone the repo
 
 ```bash
-uv run freeze.py
+git clone https://github.com/OSGeo-be/foss4g.be
+cd foss4g.be
 ```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+No additional API keys or environment variables are required.
+
+---
+
+### 📡 Development & Static Generation
+- **Start local dev server**
+
+```bash
+npm run dev
+```
+Visit http://localhost:3000.
+
+- **Build & generate static site**
+
+```bash
+npm run generate
+```
+- Fully static output generated in `.output/public`
+- You can preview this build using `npx serve .output/public`
+- You can now deploy `.output/public` to any static hosting
+
+---
+
+### 🧩 Available Scripts
+| Command            | Description                             |
+| ------------------ | --------------------------------------- |
+| `npm run dev`      | Start Nuxt in development mode          |
+| `npm run generate` | Generate fully static site into `dist/` |
+
+---
+
+### 📂 Project Structure
+```
+├── assets/             # Uncompiled assets (styles, images)
+├── components/         # Vue components (EventCard.vue, etc.)
+├── composables/        # Custom composables (useSwipe.ts, etc.)
+├── layouts/            # Application layouts
+├── pages/              # Nuxt page components
+│   ├── index.vue       # Landing page
+│   ├── sponsors.vue    # Call for Sponsors page
+│   └── schedule.vue    # Schedule page
+├── public/             # Static files (SVGs, PNGs)
+├── nuxt.config.ts      # Nuxt config (Tailwind, modules, generation options)
+├── tailwind.config.ts  # Tailwind CSS config
+└── package.json        # npm scripts & dependencies
+```
+--- 
+### 🤝 Contributing
+Any improvements, fixes, or enhancements are very welcome!
+Simply push your changes to this branch;
+
