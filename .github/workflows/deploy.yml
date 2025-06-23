@@ -1,8 +1,9 @@
-name: Freeze and Deploy to GitHub Pages
+name: Build & Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ b2025-2 ]
+    branches:
+      - b2025-2
 
 permissions:
   contents: write
@@ -12,22 +13,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1. Check out code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-
-      - name: Freeze the Flask site
-        run: |
-          uv run freeze.py
-
-      # ADD CNAME file to the root of the build directory
-      - name: Add CNAME file
-        run: echo "www.foss4g.be" > ./build/CNAME
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      # 2. Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          node-version: '22.x'
+          cache: 'npm'
+
+      # 3. Install deps
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Generate static site
+      - name: Generate static files
+        run: npm run generate
+
+      # 5. Add CNAME for the domain
+      - name: Add CNAME
+        run: echo "www.foss4g.be" > .output/public/CNAME
+
+      # @TODO: Enable when ready to deploy
+      # 6. Deploy to GitHub Pages
+      #- name: Deploy to GitHub Pages
+      #  uses: peaceiris/actions-gh-pages@v4
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: .output/public
