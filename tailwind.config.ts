@@ -16,24 +16,31 @@ module.exports = {
         },
         extend: {
             colors: {
-                /** greens */
-                primary: '#5CAB23',        // FOSS green
-                'primary-dark': '#297D29', // “4G” dark green
-                /** grey */
-                neutral: '#7C7C7C',        // BELGIUM grey
-                /** lime accent */
-                accent: '#6DBE47',         // 2025 lime
+                'off-white': '#DCDED6',
+                'stone-light': '#CED0C3',
+                'stone': '#B4BAB1',
+                'teal-light': '#859393',
+                'teal-dark': '#5D726F',
+                primary: {
+                    DEFAULT: '#859393',     // teal-light
+                    dark: '#5D726F',        // teal-dark
+                },
+                neutral: {
+                    DEFAULT: '#B4BAB1',     // stone
+                    dark: '#5D726F',        // for text contrast
+                },
+                accent: {
+                    DEFAULT: '#CED0C3',     // optional accent
+                    dark: '#859393',
+                },
                 /** yellow/red highlights */
-                warning: '#F2C100',        // n’est yellow
-                danger: '#B72A2A',         // conférence red
+                warning: '#F2C100',        // yellow logo
+                danger: '#B72A2A',         // red logo
                 bronze: '#CD7F32',
                 silver: '#C0C0C0',
                 gold: '#FFD700',
 
                 deepMapBlue: "#01295A",
-
-                /** off-white background */
-                'off-white': '#F9FBF9',
             },
             fontFamily: {
                 sans: ['Space Grotesk', 'Noto Sans', 'sans-serif'],

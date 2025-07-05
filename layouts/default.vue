@@ -4,8 +4,8 @@
 
         <Head>
             <Title>{{ title }}</Title>
-            <template v-for="link in head.link" :key="link.hid">
-                <Link :id="link.hid" :href="link.href" :hreflang="link.hreflang" :rel="link.rel"/>
+            <template v-for="link in head.link">
+                <Link :id="link.hid" :hreflang="link.hreflang" :rel="link.rel"/>
             </template>
             <template v-for="meta in head.meta" :key="meta.hid">
                 <Meta :id="meta.hid" :content="meta.content" :property="meta.property"/>
@@ -14,10 +14,11 @@
 
         <Body>
             <!-- Wrapper div for sticky footer -->
-            <div class="min-h-screen bg-primary-dark font-sans bg-repeat text-primary-dark"
-                :class="bgImageClass"
-            >
-                <main>
+            <div class="min-h-screen bg-[url('/images/background-topology.png')] font-sans bg-repeat text-primary-dark pt-8 md:pt-6 lg:pt-2">
+                <!-- Navbar goes at the top -->
+                <Navbar />
+
+                <main class="min-h-screen flex flex-col font-sans text-primary-dark pt-10">
                     <!-- Spacer for mobile navbar -->
                     <slot/>
                 </main>
@@ -44,16 +45,6 @@ import {eventBus} from "~/eventBus";
 const route = useRoute()
 const {t} = useI18n()
 const head = useLocaleHead()
-const currentRoute = useRoute();
-
-const bgImageClass = computed(() => {
-    // if the route’s name or path contains "schedule", use background-schedule.png
-    // otherwise fall back to background-topology.png
-    return currentRoute.name?.toString().toLowerCase().includes('schedule') ||
-    route.path.toLowerCase().includes('schedule')
-        ? "bg-[url('/images/background-schedule.png')]"
-        : "bg-[url('/images/background-topology.png')]"
-})
 
 const showNotification = ref(false)
 const notification = ref({
