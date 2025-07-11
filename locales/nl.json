@@ -2,6 +2,14 @@
   "head": {
     "title": "FOSS4G Belgïe 2025"
   },
+  "nav": {
+    "home": "Home",
+    "about": "Over",
+    "schedule": "Programma",
+    "sponsors": "Sponsors",
+    "volunteers": "Vrijwilligers",
+    "contact": "Contact"
+  },
   "about": {
     "title": "Over FOSS4G",
     "teaser": "Sluit je op 25 september 2025 in Brussel aan bij onze eendaagse conferentie met keynotes, praktische workshops en netwerkmogelijkheden rond open-source geospatiale tools.",

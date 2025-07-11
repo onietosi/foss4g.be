@@ -16,32 +16,31 @@ module.exports = {
         },
         extend: {
             colors: {
-                map: '#e2c6a0',
-                'map-dark': '#c6a77f',
-                primary: '#7a5c3e',
-                'primary-dark': '#5a3f27',
-                accent: '#d0b67b',
-                'accent-dark': '#b89c5f',
-                secondary: '#5CAB23', // FOSS4G green
-                'secondary-dark': '#297D29',
-                'text-main': '#3b2e20',
-                'text-muted': '#7e6b53',
-                'btn-base': '#a7794e',
-                'btn-hover': '#925f39',
-                'border-default': '#bfa078',
-                /** grey */
-                neutral: '#7C7C7C',        // BELGIUM grey
+                'off-white': '#DCDED6',
+                'stone-light': '#CED0C3',
+                'stone': '#B4BAB1',
+                'teal-light': '#859393',
+                'teal-dark': '#5D726F',
+                primary: {
+                    DEFAULT: '#859393',     // teal-light
+                    dark: '#5D726F',        // teal-dark
+                },
+                neutral: {
+                    DEFAULT: '#B4BAB1',     // stone
+                    dark: '#5D726F',        // for text contrast
+                },
+                accent: {
+                    DEFAULT: '#CED0C3',     // optional accent
+                    dark: '#859393',
+                },
                 /** yellow/red highlights */
-                warning: '#F2C100',        // n’est yellow
-                danger: '#B72A2A',         // conférence red
+                warning: '#F2C100',        // yellow logo
+                danger: '#B72A2A',         // red logo
                 bronze: '#CD7F32',
                 silver: '#C0C0C0',
                 gold: '#FFD700',
 
                 deepMapBlue: "#01295A",
-
-                /** off-white background */
-                'off-white': '#F9FBF9',
             },
             fontFamily: {
                 sans: ['Space Grotesk', 'Noto Sans', 'sans-serif'],

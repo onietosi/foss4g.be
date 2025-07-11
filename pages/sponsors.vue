@@ -77,7 +77,7 @@ const sponsors = [
 
             <!-- Hero -->
             <section
-                class="relative bg-transparent bg-cover bg-center py-12 rounded-xl max-w-5xl mx-auto text-center"
+                class="relative bg-[url('/images/card-bg-1.png')] bg-cover bg-center py-12 rounded-xl shadow max-w-5xl mx-auto text-center"
             >
                 <div class="inline-block bg-off-white bg-opacity-90 px-8 py-6 rounded-lg">
                     <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">
