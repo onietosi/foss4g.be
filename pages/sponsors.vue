@@ -113,12 +113,12 @@ const sponsors = [
                                 </li>
                             </ul>
                         </div>
-                        <NuxtLink
+                        <NuxtLinkLocale
                             :to="`/contact?sponsor=${tier.key.toLowerCase()}`"
                             class="mt-6 block text-center bg-primary hover:bg-primary-dark text-off-white font-semibold py-2 rounded-lg transition"
                         >
                             {{ $t(tier.ctaKey) }}
-                        </NuxtLink>
+                        </NuxtLinkLocale>
                     </div>
                 </div>
             </section>
@@ -139,12 +139,12 @@ const sponsors = [
                             {{ $t('sponsors.support.description') }}
                         </p>
                         <!--
-                        <NuxtLink
+                        <NuxtLinkLocale
                             to="/contact?sponsor=gold"
                             class="inline-block bg-accent hover:bg-accent-dark text-off-white font-semibold px-6 py-2 rounded-lg transition w-full sm:w-auto text-center"
                         >
                             {{ $t('sponsors.support.cta') }}
-                        </NuxtLink>
+                        </NuxtLinkLocale>
                         -->
                     </div>
 

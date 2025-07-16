@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { NuxtLink } from '#components'
+import { NuxtLinkLocale} from "#components";
 
 // Countdown state for 25 September 2025
 const timeLeft = ref({ days: 0, hours: 0, minutes: 0, seconds: 0 })
@@ -70,12 +70,12 @@ onUnmounted(() => clearInterval(timer))
                 </li>
             </ul>
 
-            <NuxtLink
+            <NuxtLinkLocale
                 to="/about"
                 class="flex justify-center border-2 border-primary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
             >
                 {{ $t('about.learnMore') }}
-            </NuxtLink>
+            </NuxtLinkLocale>
         </section>
 
         <!-- CARDS GRID -->
@@ -94,12 +94,12 @@ onUnmounted(() => clearInterval(timer))
                     <p class="text-sm text-neutral mb-4">
                         {{ $t('cards.callForTopics.description') }}
                     </p>
-                    <NuxtLink
+                    <NuxtLinkLocale
                         to="/submit"
                         class="flex justify-center border-2 border-primary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
                     >
                         {{ $t('cards.callForTopics.button') }}
-                    </NuxtLink>
+                    </NuxtLinkLocale>
                 </div>
             </div>
 
@@ -110,12 +110,12 @@ onUnmounted(() => clearInterval(timer))
                     <li><span class="font-medium">{{ $t('cards.schedulePreview.day1Label') }}</span> {{ $t('cards.schedulePreview.day1Items') }}</li>
                     <li><span class="font-medium">{{ $t('cards.schedulePreview.day2Label') }}</span> {{ $t('cards.schedulePreview.day2Items') }}</li>
                 </ul>
-                <NuxtLink
+                <NuxtLinkLocale
                     to="/schedule"
                     class="mt-4 inline-block bg-primary hover:bg-primary-dark text-off-white font-semibold px-4 py-2 rounded-lg transition text-sm self-start"
                 >
                     {{ $t('cards.schedulePreview.button') }}
-                </NuxtLink>
+                </NuxtLinkLocale>
             </div>
 
             <!-- Call for Sponsors -->
@@ -123,12 +123,12 @@ onUnmounted(() => clearInterval(timer))
                 <div class="p-5 flex flex-col justify-center flex-1">
                     <h2 class="text-lg font-bold mb-2">{{ $t('cards.callForSponsors.title') }}</h2>
                     <p class="text-sm text-neutral mb-4">{{ $t('cards.callForSponsors.description') }}</p>
-                    <NuxtLink
+                    <NuxtLinkLocale
                         to="/sponsors"
                         class="flex justify-center border-2 border-neutral text-neutral font-semibold px-4 py-2 rounded-lg hover:bg-gold hover:text-black hover:border-yellow-500 transition text-sm"
                     >
                         {{ $t('cards.callForSponsors.button') }}
-                    </NuxtLink>
+                    </NuxtLinkLocale>
                 </div>
                 <div class="w-full sm:w-2/5 h-40 sm:h-auto">
                     <img
@@ -149,12 +149,12 @@ onUnmounted(() => clearInterval(timer))
                     <p class="text-neutral text-sm mb-4">
                         {{ $t('cards.volunteers.description') }}
                     </p>
-                    <NuxtLink
+                    <NuxtLinkLocale
                         to="/volunteer"
                         class="flex justify-center border-2 border-danger text-danger font-semibold px-4 py-2 rounded-lg hover:bg-danger hover:text-white transition text-sm"
                     >
                         <span>{{ $t('cards.volunteers.button') }}</span>
-                    </NuxtLink>
+                    </NuxtLinkLocale>
                 </div>
 
                 <div class="w-full sm:w-2/5 h-40 sm:h-auto">

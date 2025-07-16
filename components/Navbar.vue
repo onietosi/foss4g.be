@@ -8,10 +8,10 @@
 
             <!-- Desktop Links -->
             <ul class="hidden md:flex space-x-6">
-                <li><router-link to="/about" class="hover:text-teal-dark">About</router-link></li>
-                <li><router-link to="/schedule" class="hover:text-teal-dark">Schedule</router-link></li>
-                <li><router-link to="/sponsors" class="hover:text-teal-dark">Sponsors</router-link></li>
-                <li><router-link to="/volunteer" class="hover:text-teal-dark">Volunteer</router-link></li>
+                <li><NuxtLinkLocale to="/about" class="hover:text-teal-dark">About</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">Schedule</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/sponsors" class="hover:text-teal-dark">Sponsors</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">Volunteer</NuxtLinkLocale></li>
             </ul>
 
             <!-- Mobile Toggle Button (now z-30) -->
