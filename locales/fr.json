@@ -6,8 +6,9 @@
     "home": "Accueil",
     "about": "À propos",
     "schedule": "Programme",
-    "sponsors": "Sponsors",
-    "volunteers": "Bénévoles",
+    "ourSponsors": "Nos sponsors",
+    "becomeSponsor": "Devenir sponsor",
+    "volunteer": "Nous aider",
     "contact": "Contact"
   },
   "about": {

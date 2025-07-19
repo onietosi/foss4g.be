@@ -2,16 +2,17 @@
     <nav class="fixed inset-x-0 top-0 bg-stone-light/90 backdrop-blur-md z-20">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Logo / Brand -->
-            <router-link to="/" class="text-teal-dark font-bold text-lg">
-                FOSS4G BELGIUM
-            </router-link>
+            <NuxtLinkLocale to="/" class="text-teal-dark font-bold text-lg">
+                FOSS4G BELGIUM 2025
+            </NuxtLinkLocale>
 
             <!-- Desktop Links -->
             <ul class="hidden md:flex space-x-6">
-                <li><NuxtLinkLocale to="/about" class="hover:text-teal-dark">About</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">Schedule</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/sponsors" class="hover:text-teal-dark">Sponsors</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">Volunteer</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale></li>
+                <!--<li><NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">{{ $t('nav.schedule') }}</NuxtLinkLocale></li>-->
+                <li><NuxtLinkLocale to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale></li>
             </ul>
 
             <!-- Mobile Toggle Button (now z-30) -->
