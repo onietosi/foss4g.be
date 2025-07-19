@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Logo / Brand -->
             <router-link to="/" class="text-teal-dark font-bold text-lg">
-                FOSS4G
+                FOSS4G BELGIUM
             </router-link>
 
             <!-- Desktop Links -->
