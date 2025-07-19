@@ -51,10 +51,13 @@
                 @click.self="close()"
                 class="absolute inset-0 h-screen bg-stone-light/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-20"
             >
-                <router-link @click="close()" to="/" class="text-teal-dark text-xl">{{ $t('nav.home') }}</router-link>
-                <router-link @click="close()" to="/schedule" class="text-teal-dark text-xl">{{ $t('nav.schedule') }}</router-link>
-                <router-link @click="close()" to="/sponsors" class="text-teal-dark text-xl">{{ $t('nav.sponsors') }}</router-link>
-                <router-link @click="close()" to="/volunteer" class="text-teal-dark text-xl">{{ $t('nav.volunteers') }}</router-link>
+                <NuxtLinkLocale @click="close()" to="/" class="hover:text-teal-dark">{{ $t('nav.home') }}</NuxtLinkLocale>
+                <NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale>
+                <!--<NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">{{ $t('nav.schedule') }}</NuxtLinkLocale></li>-->
+                <NuxtLinkLocale @click="close()" to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close()" to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close()" to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close()" to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale>
             </div>
         </transition>
     </nav>

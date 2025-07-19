@@ -44,7 +44,7 @@ const sponsors = [
         id: 1,
         name: 'Champs libres',
         link: 'https://www.champs-libres.coop',
-        logo: '/images/sponsors/champs-libres-logo.png',
+        logo: '/images/sponsors/champslibres-logo.svg',
         bgClass: 'bg-white',
     },
     {

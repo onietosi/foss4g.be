@@ -44,7 +44,7 @@ const sponsors = [
         id: 1,
         name: 'Champs libres',
         link: 'https://www.champs-libres.coop',
-        logo: '/images/sponsors/champs-libres-logo.png',
+        logo: '/images/sponsors/champslibres-logo.svg',
         bgClass: 'bg-white',
     },
     {
@@ -74,12 +74,14 @@ const sponsors = [
 <template>
     <div class="min-h-screen font-sans text-primary-dark flex flex-col">
         <main class="flex-1 px-4 py-6 lg:px-8 lg:py-12 space-y-12">
-
             <!-- Hero -->
-            <section
-                class="relative bg-[url('/images/card-bg-1.png')] bg-cover bg-center py-12 rounded-xl shadow max-w-5xl mx-auto text-center"
-            >
-                <div class="inline-block bg-off-white bg-opacity-90 px-8 py-6 rounded-lg">
+            <section class="relative py-12 rounded-xl shadow max-w-5xl mx-auto text-center overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-[url('/images/card-bg-1.png')] bg-cover bg-center opacity-70"
+                ></div>
+
+                <!-- Contenu au-dessus -->
+                <div class="relative z-10 px-6 inline-block bg-off-white bg-opacity-90 py-6 rounded-lg">
                     <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">
                         {{ $t('sponsors.hero.title') }}
                     </h1>
@@ -87,6 +89,7 @@ const sponsors = [
                         {{ $t('sponsors.hero.description') }}
                     </p>
                 </div>
+
             </section>
 
             <!-- Tier cards -->

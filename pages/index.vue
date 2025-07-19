@@ -32,22 +32,17 @@ onUnmounted(() => clearInterval(timer))
     <div class="flex-1 px-4 py-6 space-y-8 lg:px-8 lg:py-12">
         <!-- HERO -->
         <section
-            class="relative bg-off-white py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center justify-center space-y-4"
+            class="bg-off-white py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center justify-center space-y-4"
         >
             <img
                 src="/images/foss4g.svg"
                 alt="FOSS4G Logo"
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-60 object-contain"
             />
-            <!-- Event Banner -->
-            <div class="absolute rounded-xl"></div>
-            <div class="relative text-center text-white space-y-2">
-                <h1 class="text-primary-dark text-2xl sm:text-2xl md:text-3xl font-extrabold">
-                    Bruxelles - 25 septembre 2025
+            <div class="text-center text-white">
+                <h1 class="text-primary-dark text-2xl sm:text-2xl md:text-3xl font-extrabold mb-4">
+                    {{ $t('head.subtitle') }}
                 </h1>
-                <p class="text-primary-dark text-sm sm:text-base">
-
-                </p>
             </div>
         </section>
 
