@@ -91,12 +91,12 @@ onUnmounted(() => clearInterval(timer))
                 </div>
                 <div class="p-5 flex flex-col justify-center flex-1">
                     <h2 class="text-lg font-bold mb-2">{{ $t('cards.callForTopics.title') }}</h2>
-                    <p class="text-sm text-neutral mb-4">
+                    <p class="text-sm text-neutral-dark mb-4">
                         {{ $t('cards.callForTopics.description') }}
                     </p>
                     <NuxtLinkLocale
                         to="/submit"
-                        class="flex justify-center border-2 border-primary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
+                        class="flex justify-center border-2 border-black hover:border-primary text-black font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
                     >
                         {{ $t('cards.callForTopics.button') }}
                     </NuxtLinkLocale>
@@ -122,10 +122,10 @@ onUnmounted(() => clearInterval(timer))
             <div class="bg-off-white px-2 rounded-xl shadow overflow-hidden flex flex-col sm:flex-row">
                 <div class="p-5 flex flex-col justify-center flex-1">
                     <h2 class="text-lg font-bold mb-2">{{ $t('cards.callForSponsors.title') }}</h2>
-                    <p class="text-sm text-neutral mb-4">{{ $t('cards.callForSponsors.description') }}</p>
+                    <p class="text-sm text-neutral-dark mb-4">{{ $t('cards.callForSponsors.description') }}</p>
                     <NuxtLinkLocale
                         to="/sponsors"
-                        class="flex justify-center border-2 border-neutral text-neutral font-semibold px-4 py-2 rounded-lg hover:bg-gold hover:text-black hover:border-yellow-500 transition text-sm"
+                        class="flex justify-center border-2 border-black text-black font-semibold px-4 py-2 rounded-lg hover:bg-gold hover:text-black hover:border-gold transition text-sm"
                     >
                         {{ $t('cards.callForSponsors.button') }}
                     </NuxtLinkLocale>
@@ -146,7 +146,7 @@ onUnmounted(() => clearInterval(timer))
                     <h2 class="text-lg font-bold mb-2">
                         {{ $t('cards.volunteers.title') }}
                     </h2>
-                    <p class="text-neutral text-sm mb-4">
+                    <p class="text-neutral-dark text-sm mb-4">
                         {{ $t('cards.volunteers.description') }}
                     </p>
                     <NuxtLinkLocale
