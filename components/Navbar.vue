@@ -13,6 +13,7 @@
                 <li><NuxtLinkLocale to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale></li>
                 <li><NuxtLinkLocale to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale></li>
                 <li><NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale></li>
+                <li><NuxtLinkLocale to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale></li>
             </ul>
 
             <!-- Mobile Toggle Button (now z-30) -->
