@@ -2,44 +2,63 @@
     <nav class="fixed inset-x-0 top-0 bg-stone-light/90 backdrop-blur-md z-20">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Logo / Brand -->
-            <NuxtLinkLocale to="/" class="text-teal-dark font-bold text-lg">
+            <NuxtLink to="/" class="text-teal-dark font-bold text-lg">
                 FOSS4G BELGIUM 2025
-            </NuxtLinkLocale>
+            </NuxtLink>
 
-            <!-- Desktop Links -->
-            <ul class="hidden md:flex space-x-6">
-                <li><NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale></li>
-                <!--<li><NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">{{ $t('nav.schedule') }}</NuxtLinkLocale></li>-->
-                <li><NuxtLinkLocale to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale></li>
-                <li><NuxtLinkLocale to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale></li>
-            </ul>
+            <!-- Desktop Links & Lang Switch -->
+            <div class="hidden md:flex items-center space-x-6">
+                <ul class="flex space-x-6 items-center">
+                    <li>
+                        <NuxtLink to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLink>
+                    </li>
+                    <!-- Language Picker -->
+                    <li class="relative">
+                        <button
+                            @click="toggleDropdown"
+                            class="w-8 h-8 flex items-center justify-center bg-white rounded-full hover:shadow-md focus:outline-none"
+                        >
+                            <span class="text-sm font-medium text-gray-800">{{ locale.toUpperCase() }}</span>
+                        </button>
+                        <ul v-if="showDropdown"
+                            class="absolute bottom-full top-0 mt-8 bg-white border border-gray-200 rounded shadow-lg z-50 min-w-max">
+                            <li v-for="loc in localesToPick" :key="loc.code" class="whitespace-nowrap">
+                                <NuxtLink :to="switchLocalePath(loc.code)" class="block bg-white px-4 py-2 hover:bg-gray-100"
+                                          @click="hideDropdown">
+                                    {{ loc.label }}
+                                </NuxtLink>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-            <!-- Mobile Toggle Button (now z-30) -->
+            <!-- Mobile Toggle Button -->
             <button
                 @click="isOpen = !isOpen"
                 aria-label="Toggle menu"
                 class="md:hidden relative z-30 w-8 h-8"
             >
-                <!-- CLOSED: three‐line burger -->
-                <span
-                    v-if="!isOpen"
-                    class="absolute inset-0 flex flex-col items-center justify-center space-y-1.5"
-                >
+                <span v-if="!isOpen" class="absolute inset-0 flex flex-col items-center justify-center space-y-1.5">
                   <span class="block w-6 h-0.5 bg-teal-dark"></span>
                   <span class="block w-6 h-0.5 bg-teal-dark"></span>
                   <span class="block w-6 h-0.5 bg-teal-dark"></span>
                 </span>
-
-                <!-- OPEN: two crossed lines -->
-                <span v-else class="absolute inset-0">
-                  <span
-                      class="absolute inset-0 m-auto block w-6 h-0.5 bg-teal-dark transform rotate-45 origin-center"
-                  ></span>
-                  <span
-                      class="absolute inset-0 m-auto block w-6 h-0.5 bg-teal-dark transform -rotate-45 origin-center"
-                  ></span>
+                        <span v-else class="absolute inset-0">
+                  <span class="absolute inset-0 m-auto block w-6 h-0.5 bg-teal-dark transform rotate-45 origin-center"></span>
+                  <span class="absolute inset-0 m-auto block w-6 h-0.5 bg-teal-dark transform -rotate-45 origin-center"></span>
                 </span>
             </button>
         </div>
@@ -48,27 +67,69 @@
         <transition name="fade">
             <div
                 v-if="isOpen"
-                @click.self="close()"
+                @click.self="close"
                 class="absolute inset-0 h-screen bg-stone-light/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-20"
             >
-                <NuxtLinkLocale @click="close()" to="/" class="hover:text-teal-dark">{{ $t('nav.home') }}</NuxtLinkLocale>
-                <NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale>
-                <!--<NuxtLinkLocale to="/schedule" class="hover:text-teal-dark">{{ $t('nav.schedule') }}</NuxtLinkLocale></li>-->
-                <NuxtLinkLocale @click="close()" to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale>
-                <NuxtLinkLocale @click="close()" to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale>
-                <NuxtLinkLocale @click="close()" to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale>
-                <NuxtLinkLocale @click="close()" to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale>
+                <NuxtLink @click="close" to="/">{{ $t('nav.home') }}</NuxtLink>
+                <NuxtLink @click="close" to="/about">{{ $t('nav.about') }}</NuxtLink>
+                <NuxtLink @click="close" to="/our-sponsors">{{ $t('nav.ourSponsors') }}</NuxtLink>
+                <NuxtLink @click="close" to="/become-sponsor">{{ $t('nav.becomeSponsor') }}</NuxtLink>
+                <NuxtLink @click="close" to="/volunteer">{{ $t('nav.volunteer') }}</NuxtLink>
+                <NuxtLink @click="close" to="/contact">{{ $t('nav.contact') }}</NuxtLink>
+
+                <!-- Mobile Language Picker -->
+                <ul class="flex space-x-4 mt-4">
+                    <li
+                        v-for="loc in localesToPick"
+                        :key="loc.code"
+                    >
+                        <NuxtLink
+                            :to="switchLocalePath(loc.code)"
+                            class="px-3 py-2 bg-white rounded hover:bg-gray-100 text-sm"
+                            @click="close"
+                        >
+                            {{ loc.label }}
+                        </NuxtLink>
+                    </li>
+                </ul>
             </div>
         </transition>
     </nav>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useSwitchLocalePath } from '#i18n'
+
 const isOpen = ref(false)
+const showDropdown = ref(false)
+
 function close() {
     isOpen.value = false
+    showDropdown.value = false
 }
+function toggleDropdown() {
+    showDropdown.value = !showDropdown.value
+}
+function hideDropdown() {
+    showDropdown.value = false
+}
+
+// i18n composables
+const { locale, availableLocales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+// Define labels for languages
+const languages = [
+    { code: 'fr', label: 'Français' },
+    { code: 'nl', label: 'Nederlands' },
+    { code: 'en', label: 'English' }
+]
+
+const localesToPick = computed(() =>
+    languages.filter(lang => availableLocales.includes(lang.code) && lang.code !== locale.value)
+)
 </script>
 
 <style scoped>
