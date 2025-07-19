@@ -42,32 +42,32 @@ const tiers = [
 const sponsors = [
     {
         id: 1,
-        name: 'Geopostcodes',
-        link: 'https://geopostcodes.com',
-        logo: '/images/sponsors/geopostcodes-logo.svg',
-        bgClass: 'bg-deepMapBlue',
-    },
-    {
-        id: 2,
-        name: 'GIM',
-        link: 'https://gim.be',
-        logo: '/images/sponsors/gim-logo.svg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 3,
         name: 'Champs libres',
         link: 'https://www.champs-libres.coop',
         logo: '/images/sponsors/champs-libres-logo.png',
         bgClass: 'bg-white',
     },
     {
-        id: 4,
-        name: 'OpenStreetMap Belgium',
-        link: 'https://openstreetmap.be',
-        logo: '/images/sponsors/osm-be-logo.svg',
+        id: 2,
+        name: 'Geo Solutions',
+        link: 'https://geosolutions.be/',
+        logo: '/images/sponsors/geosolutions-logo.jpg',
         bgClass: 'bg-white',
-    }
+    },
+    {
+        id: 3,
+        name: 'Atelier Cartographique',
+        link: 'https://atelier-cartographique.be/',
+        logo: '/images/sponsors/ateliercartographique-logo.svg',
+        bgClass: 'bg-white',
+    },
+    {
+        id: 4,
+        name: 'Spacebel',
+        link: 'https://www.spacebel.com/',
+        logo: '/images/sponsors/spacebel-logo.svg',
+        bgClass: 'bg-white',
+    },
 ]
 </script>
 

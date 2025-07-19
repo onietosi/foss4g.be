@@ -94,7 +94,7 @@ onUnmounted(() => clearInterval(timer))
                             {{ $t('cards.callForTopics.description') }}
                         </p>
                         <NuxtLinkLocale
-                            to="/submit"
+                            to="/present"
                             class="flex justify-center border-2 border-black hover:border-primary text-black font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
                         >
                             {{ $t('cards.callForTopics.button') }}
