@@ -16,9 +16,8 @@
     "teaser": "Join us on 25 September 2025 in Brussels for a one-day conference of keynotes, hands-on workshops, and community networking around open-source geospatial tools.",
     "features": {
       "keynotes": "Keynotes & Talks",
-      "workshops": "Hands-on Workshops",
       "networking": "Community Networking",
-      "openSource": "Open-Source Tools"
+      "osgeoTools": "OSGEO Tools"
     },
     "learnMore": "Learn More"
   },
@@ -29,6 +28,7 @@
       "button": "Submit"
     },
     "schedulePreview": {
+      "comingSoon": "Coming Soon",
       "title": "Schedule Preview",
       "day1Label": "Day 1:",
       "day1Items": "Welcome, Keynote, Lunch",

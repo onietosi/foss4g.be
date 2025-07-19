@@ -51,22 +51,18 @@ onUnmounted(() => clearInterval(timer))
                 {{ $t('about.teaser') }}
             </p>
 
-            <ul class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <ul class="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <li class="flex flex-col items-center space-y-2">
                     <MdiIcon icon="mdiBullhorn" size="2.5em" />
                     <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.keynotes') }}</span>
-                </li>
-                <li class="flex flex-col items-center space-y-2">
-                    <MdiIcon icon="mdiWrench" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.workshops') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
                     <MdiIcon icon="mdiAccountMultiple" size="2.5em" />
                     <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.networking') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
-                    <MdiIcon icon="mdiCheck" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.openSource') }}</span>
+                    <MdiIcon icon="mdiTools" size="2.5em" />
+                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.osgeoTools') }}</span>
                 </li>
             </ul>
 
@@ -81,41 +77,45 @@ onUnmounted(() => clearInterval(timer))
         <!-- CARDS GRID -->
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <!-- Call for Topics -->
-            <div class="bg-off-white rounded-xl shadow overflow-hidden flex flex-col sm:flex-row">
-                <div class="w-full sm:w-2/5 h-40 sm:h-auto">
-                    <img
-                        src="/images/call.png"
-                        alt="Megaphone"
-                        class="w-full h-full object-contain p-4"
-                    />
-                </div>
-                <div class="p-5 flex flex-col justify-center flex-1">
+            <div class="bg-off-white rounded-xl shadow overflow-hidden p-5 ">
+                <div class="w-full h-30 flex flex-row">
                     <h2 class="text-lg font-bold mb-2">{{ $t('cards.callForTopics.title') }}</h2>
-                    <p class="text-sm text-neutral-dark mb-4">
-                        {{ $t('cards.callForTopics.description') }}
-                    </p>
-                    <NuxtLinkLocale
-                        to="/submit"
-                        class="flex justify-center border-2 border-black hover:border-primary text-black font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
-                    >
-                        {{ $t('cards.callForTopics.button') }}
-                    </NuxtLinkLocale>
+                </div>
+                <div class="flex flex-col justify-center sm:flex-row">
+                    <div class="w-full sm:w-2/5 h-40 sm:h-auto">
+                        <img
+                            src="/images/call.png"
+                            alt="Megaphone"
+                            class="w-full h-full object-contain p-4"
+                        />
+                    </div>
+                    <div class="flex flex-col justify-end flex-1">
+                        <p class="text-sm text-neutral-dark mb-4">
+                            {{ $t('cards.callForTopics.description') }}
+                        </p>
+                        <NuxtLinkLocale
+                            to="/submit"
+                            class="flex justify-center border-2 border-black hover:border-primary text-black font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
+                        >
+                            {{ $t('cards.callForTopics.button') }}
+                        </NuxtLinkLocale>
+                    </div>
                 </div>
             </div>
 
             <!-- Schedule preview -->
             <div id="schedule" class="bg-primary-dark rounded-xl shadow p-5 flex flex-col">
                 <h2 class="text-lg font-bold text-white mb-3">{{ $t('cards.schedulePreview.title') }}</h2>
-                <ul class="space-y-2 text-white flex-1 text-sm">
-                    <li><span class="font-medium">{{ $t('cards.schedulePreview.day1Label') }}</span> {{ $t('cards.schedulePreview.day1Items') }}</li>
-                    <li><span class="font-medium">{{ $t('cards.schedulePreview.day2Label') }}</span> {{ $t('cards.schedulePreview.day2Items') }}</li>
-                </ul>
+                <p class="text-sm text-white mb-3">{{ $t('cards.schedulePreview.comingSoon') }}</p>
+                <!--
                 <NuxtLinkLocale
                     to="/schedule"
                     class="mt-4 inline-block bg-primary hover:bg-primary-dark text-off-white font-semibold px-4 py-2 rounded-lg transition text-sm self-start"
                 >
+
                     {{ $t('cards.schedulePreview.button') }}
                 </NuxtLinkLocale>
+                -->
             </div>
 
             <!-- Call for Sponsors -->
