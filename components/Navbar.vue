@@ -2,27 +2,27 @@
     <nav class="fixed inset-x-0 top-0 bg-stone-light/90 backdrop-blur-md z-20">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Logo / Brand -->
-            <NuxtLink to="/" class="text-teal-dark font-bold text-lg">
+            <NuxtLinkLocale to="/" class="text-teal-dark font-bold text-lg">
                 FOSS4G BELGIUM 2025
-            </NuxtLink>
+            </NuxtLinkLocale>
 
             <!-- Desktop Links & Lang Switch -->
             <div class="hidden md:flex items-center space-x-6">
                 <ul class="flex space-x-6 items-center">
                     <li>
-                        <NuxtLink to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLink>
+                        <NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale>
                     </li>
                     <li>
-                        <NuxtLink to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLink>
+                        <NuxtLinkLocale to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale>
                     </li>
                     <li>
-                        <NuxtLink to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLink>
+                        <NuxtLinkLocale to="/become-sponsor" class="hover:text-teal-dark">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale>
                     </li>
                     <li>
-                        <NuxtLink to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLink>
+                        <NuxtLinkLocale to="/volunteer" class="hover:text-teal-dark">{{ $t('nav.volunteer') }}</NuxtLinkLocale>
                     </li>
                     <li>
-                        <NuxtLink to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLink>
+                        <NuxtLinkLocale to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale>
                     </li>
                     <!-- Language Picker -->
                     <li class="relative">
@@ -70,12 +70,12 @@
                 @click.self="close"
                 class="absolute inset-0 h-screen bg-stone-light/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-20"
             >
-                <NuxtLink @click="close" to="/">{{ $t('nav.home') }}</NuxtLink>
-                <NuxtLink @click="close" to="/about">{{ $t('nav.about') }}</NuxtLink>
-                <NuxtLink @click="close" to="/our-sponsors">{{ $t('nav.ourSponsors') }}</NuxtLink>
-                <NuxtLink @click="close" to="/become-sponsor">{{ $t('nav.becomeSponsor') }}</NuxtLink>
-                <NuxtLink @click="close" to="/volunteer">{{ $t('nav.volunteer') }}</NuxtLink>
-                <NuxtLink @click="close" to="/contact">{{ $t('nav.contact') }}</NuxtLink>
+                <NuxtLinkLocale @click="close" to="/">{{ $t('nav.home') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close" to="/about">{{ $t('nav.about') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close" to="/our-sponsors">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close" to="/become-sponsor">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close" to="/volunteer">{{ $t('nav.volunteer') }}</NuxtLinkLocale>
+                <NuxtLinkLocale @click="close" to="/contact">{{ $t('nav.contact') }}</NuxtLinkLocale>
 
                 <!-- Mobile Language Picker -->
                 <ul class="flex space-x-4 mt-4">
@@ -83,13 +83,13 @@
                         v-for="loc in localesToPick"
                         :key="loc.code"
                     >
-                        <NuxtLink
+                        <NuxtLinkLocale
                             :to="switchLocalePath(loc.code)"
                             class="px-3 py-2 bg-white rounded hover:bg-gray-100 text-sm"
                             @click="close"
                         >
                             {{ loc.label }}
-                        </NuxtLink>
+                        </NuxtLinkLocale>
                     </li>
                 </ul>
             </div>
