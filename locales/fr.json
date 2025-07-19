@@ -24,9 +24,9 @@
   },
   "cards": {
     "callForTopics": {
-      "title": "Appel à sujets",
-      "description": "Nous recherchons des présentations sur des sujets géospatiaux open-source. (Date limite : 21 juillet 2025)",
-      "button": "Soumettre un sujet"
+      "title": "Appel à présentations",
+      "description": "Nous recherchons des présentations sur des présentations sur la thématique géospatial open-source. (Date limite : 21 juillet 2025)",
+      "button": "Soumettre une présentation"
     },
     "schedulePreview": {
       "title": "Aperçu du programme",
