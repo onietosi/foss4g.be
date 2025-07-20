@@ -51,23 +51,23 @@ onUnmounted(() => clearInterval(timer))
             id="about"
             class="bg-off-white px-6 py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center"
         >
-            <h2 class="text-lg font-bold mb-3">{{ $t('about.title') }}</h2>
+            <h2 class="text-lg font-bold mb-3">{{ $t('index.about.title') }}</h2>
             <p class="text-sm text-neutral-dark text-center mb-4">
-                {{ $t('about.teaser') }}
+                {{ $t('index.about.teaser') }}
             </p>
 
             <ul class="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <li class="flex flex-col items-center space-y-2">
                     <MdiIcon icon="mdiBullhorn" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.keynotes') }}</span>
+                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.keynotes') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
                     <MdiIcon icon="mdiAccountMultiple" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.networking') }}</span>
+                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.networking') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
                     <MdiIcon icon="mdiTools" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('about.features.osgeoTools') }}</span>
+                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.osgeoTools') }}</span>
                 </li>
             </ul>
 
@@ -75,7 +75,7 @@ onUnmounted(() => clearInterval(timer))
                 to="/about"
                 class="flex justify-center border-2 border-primary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
             >
-                {{ $t('about.learnMore') }}
+                {{ $t('index.about.learnMore') }}
             </NuxtLinkLocale>
         </section>
 

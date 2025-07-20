@@ -4,73 +4,49 @@
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <!-- Who We Are -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h2 class="text-lg font-bold mb-2">Qui sommes-nous ?</h2>
+                <h2 class="text-lg font-bold mb-2">{{ $t('about.whoWeAre.title') }}</h2>
                 <p class="text-sm text-neutral-dark">
-                    Nous sommes le chapitre belge de la Open Source Geospatial Foundation (OSGeo).
+                    {{ $t('about.whoWeAre.content') }}
                 </p>
-            </div>
-
-            <!-- Event Info -->
-            <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h3 class="text-lg font-bold mb-2">Événement FOSS4G Belgium 2025</h3>
-                <p class="text-sm text-neutral-dark">
-                    Rejoignez-nous le <span class="font-semibold">25 septembre 2025</span> à Bruxelles pour une conférence d’une journée
-                    avec discours, ateliers pratiques et réseautage autour des outils géospatiaux open-source.
+                <p>
+                    <a href="https://www.osgeo.be" class="text-primary-dark underline">https://www.osgeoe.be</a>
                 </p>
-            </div>
-            <!-- Conference Details Card -->
-            <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h3 class="text-lg font-bold mb-2">La conférence FOSS4G</h3>
-                <ul class="list-disc list-inside space-y-1 ml-4 text-sm text-neutral-dark">
-                    <li><span class="font-semibold">Discours &amp; Présentations</span> : sessions animées par des experts du domaine.</li>
-                    <li><span class="font-semibold">Réseautage Communautaire</span> : rencontres et échanges avec la communauté SIG open-source.</li>
-                    <li><span class="font-semibold">Outils OSGeo</span> : démonstrations et ateliers pratiques sur QGIS, PostGIS, GDAL, et plus.</li>
-                </ul>
             </div>
 
             <!-- Mission Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h3 class="text-lg font-bold mb-2">Notre mission</h3>
+                <h3 class="text-lg font-bold mb-2">{{ $t('about.mission.title') }}</h3>
                 <p class="text-sm text-neutral-dark">
-                    OSGeo est une organisation à but non lucratif dont la mission est de soutenir le développement de logiciels
-                    géospatiaux open source et de promouvoir leur utilisation. La fondation fournit un soutien financier,
-                    organisationnel et juridique à la communauté géospatiale open source au sens large.
+                    {{ $t('about.mission.content') }}
                 </p>
             </div>
 
             <!-- Support & Advocacy Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h3 class="text-lg font-bold mb-2">Support</h3>
+                <h3 class="text-lg font-bold mb-2">{{ $t('about.support.title') }}</h3>
                 <p class="text-sm text-neutral-dark">
-                    Elle sert d'entité juridique indépendante où les membres peuvent contribuer par du code, des financements et
-                    d'autres ressources, assurant la préservation des contributions pour le bénéfice public. OSGeo agit aussi en
-                    tant qu'organisation de sensibilisation et de plaidoyer, offrant forum et infrastructure partagée pour
-                    renforcer la collaboration entre projets.
+                    {{ $t('about.support.content') }}
+                </p>
+            </div>
+
+            <!-- Event Info -->
+            <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
+                <h3 class="text-lg font-bold mb-2">{{ $t('about.events.title') }}</h3>
+                <p class="text-sm text-neutral-dark">
+                    {{ $t('about.events.content') }}
                 </p>
             </div>
 
             <!-- Open Source Projects Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h3 class="text-lg font-bold mb-2">Projets open source</h3>
+                <h3 class="text-lg font-bold mb-2">{{ $t('about.projects.title') }}</h3>
                 <p class="text-sm text-neutral-dark">
-                    Les projets de la fondation sont tous librement disponibles et utilisables sous une licence open source
-                    certifiée par l'OSI.
+                    {{ $t('about.projects.content') }}
+                </p>
+                <p>
+                    <a href="https://www.osgeo.org/" class="text-primary-dark underline">https://www.osgeo.org/</a>
                 </p>
             </div>
         </section>
     </div>
 </template>
-
-<script setup lang="ts">
-import { NuxtLinkLocale } from '#components'
-</script>
-
-<style>
-/* Transition classes */
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.2s;
-}
-.fade-enter-from, .fade-leave-to {
-    opacity: 0;
-}
-</style>
