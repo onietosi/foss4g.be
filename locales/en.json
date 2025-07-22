@@ -12,15 +12,39 @@
     "volunteer": "Volunteer",
     "contact": "Contact"
   },
+  "index": {
+    "about": {
+      "title": "About FOSS4G",
+      "teaser": "Join us on 25 September 2025 in Brussels for a one-day conference of keynotes, hands-on workshops, and community networking around open-source geospatial tools.",
+      "features": {
+        "keynotes": "Keynotes & Talks",
+        "networking": "Community Networking",
+        "osgeoTools": "OSGEO Tools"
+      },
+      "learnMore": "Learn More"  
+    }
+  },
   "about": {
-    "title": "About FOSS4G",
-    "teaser": "Join us on 25 September 2025 in Brussels for a one-day conference of keynotes, hands-on workshops, and community networking around open-source geospatial tools.",
-    "features": {
-      "keynotes": "Keynotes & Talks",
-      "networking": "Community Networking",
-      "osgeoTools": "OSGEO Tools"
+    "whoWeAre": {
+      "title": "Who We Are",
+      "content": "We are the Belgian chapter of the Open Source Geospatial Foundation (OSGeo)."
     },
-    "learnMore": "Learn More"
+    "mission": {
+      "title": "Our Mission",
+      "content": "The OSGeo Foundation is a non-profit organization whose mission is to support the development of open-source geospatial software and promote its use. The foundation provides financial, organizational, and legal support to the broader open-source geospatial community."
+    },
+    "support": {
+      "title": "Support",
+      "content": "Our organization serves as an independent legal entity where members can contribute code, funding, and other resources, ensuring the preservation of contributions for public benefit. OSGeo also acts as an outreach and advocacy organization, providing a forum and shared infrastructure to strengthen collaboration among projects."
+    },
+    "events":{
+      "title": "FOSS4G Belgium Events",
+      "content": "One of the main activities of OSGeo Belgium is organizing events that bring together the open-source geospatial community in Belgium. Our flagship event is FOSS4G Belgium."
+    },
+    "projects": {
+      "title": "Open Source Projects",
+      "content": "The projects supported by the OSGeo Foundation are all freely available and usable under an OSI-certified open-source license. These projects include popular geospatial software such as QGIS, GeoServer, PostGIS, and many others that are widely used in the industry."
+    }
   },
   "cards": {
     "callForTopics": {

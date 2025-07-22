@@ -12,15 +12,39 @@
     "volunteer": "Vrijwilliger",
     "contact": "Contact"
   },
+  "index": {
+    "about": {
+      "title": "Over FOSS4G",
+      "teaser": "Sluit je op 25 september 2025 in Brussel aan bij onze eendaagse conferentie met keynotes, praktische workshops en netwerkmogelijkheden rond open-source geospatiale tools.",
+      "features": {
+        "keynotes": "Keynotes & Presentaties",
+        "networking": "Community Netwerken",
+        "osgeoTools": "OSGEO Tools"
+      },
+      "learnMore": "Meer Informatie"
+    }
+  },
   "about": {
-    "title": "Over FOSS4G",
-    "teaser": "Sluit je op 25 september 2025 in Brussel aan bij onze eendaagse conferentie met keynotes, praktische workshops en netwerkmogelijkheden rond open-source geospatiale tools.",
-    "features": {
-      "keynotes": "Keynotes & Presentaties",
-      "networking": "Community Netwerken",
-      "osgeoTools": "OSGEO Tools"
+    "whoWeAre": {
+      "title": "Wie zijn wij?",
+      "content": "Wij zijn het Belgische afdeling van de Open Source Geospatial Foundation (OSGeo)."
     },
-    "learnMore": "Meer Informatie"
+    "mission": {
+      "title": "Onze Missie",
+      "content": "OSGeo is een non-profitorganisatie die zich richt op het ondersteunen van de ontwikkeling van open-source geospatiale software en het bevorderen van het gebruik ervan. De stichting biedt financiële, organisatorische en juridische ondersteuning aan de bredere open-source geospatiale gemeenschap."
+    },
+    "support": {
+      "title": "Support",
+      "content": "Onze organisatie fungeert als een onafhankelijke juridische entiteit waar leden kunnen bijdragen met code, financiering en andere middelen, waardoor de bijdragen worden bewaard voor het publieke belang. OSGeo fungeert ook als een bewustwordings- en belangenbehartigingsorganisatie, die een forum en gedeelde infrastructuur biedt om samenwerking tussen projecten te versterken."
+    },
+    "events": {
+      "title": "FOSS4G Belgium Evenementen",
+      "content": "Een van de belangrijkste activiteiten van OSGeo Belgium is het organiseren van evenementen die de open-source geospatiale gemeenschap in België samenbrengen. Ons belangrijkste evenement is FOSS4G Belgium."
+    },
+    "projects": {
+      "title": "Projets Open Source",
+      "content": "De projecten die door de OSGeo-stichting worden ondersteund, zijn allemaal vrij beschikbaar en bruikbaar onder een open source-licentie die door de OSI is gecertificeerd. Deze projecten omvatten populaire geospatiale software zoals QGIS, GeoServer, PostGIS, en vele anderen die veelvuldig in de industrie worden gebruikt."
+    }
   },
   "cards": {
     "callForTopics": {
