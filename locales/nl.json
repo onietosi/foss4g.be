@@ -46,6 +46,17 @@
       "content": "De projecten die door de OSGeo-stichting worden ondersteund, zijn allemaal vrij beschikbaar en bruikbaar onder een open source-licentie die door de OSI is gecertificeerd. Deze projecten omvatten populaire geospatiale software zoals QGIS, GeoServer, PostGIS, en vele anderen die veelvuldig in de industrie worden gebruikt."
     }
   },
+  "contact": {
+    "contactUs": "Neem Contact Op",
+    "askByEmailTo": "Voor vragen kunt u ons e-mailen op",
+    "sendAnEmail": "Stuur een E-mail",
+    "followUs": "Volg Ons"
+  },
+  "volunteer": {
+    "title": "Op zoek naar Vrijwilligers",
+    "content": "We zijn op zoek naar vrijwilligers om ons te helpen bij het organiseren van FOSS4G Belgium. Als je geïnteresseerd bent, neem dan contact met ons op om deel uit te maken van het team en bij te dragen aan het succes van het evenement.",
+    "contactUs": "Neem Contact Op"
+  },
   "cards": {
     "callForTopics": {
       "title": "Oproep voor Onderwerpen",

@@ -22,7 +22,7 @@
         "osgeoTools": "Outils OSGEO"
       },
       "learnMore": "En savoir plus"
-    }      
+    }
   },
   "about": {
     "whoWeAre": {
@@ -45,6 +45,18 @@
       "title": "Projets Open Source",
       "content": "Les projets soutenus par la fondation OSGeo sont tous librement disponibles et utilisables sous une licence open source certifiée par l'OSI. Ces projets incluent des logiciels géospatiaux populaires tels que QGIS, GeoServer, PostGIS, et bien d'autres qui sont largement utilisés dans l'industrie."
     }
+  },
+  "contact": {
+    "contactUs": "Contactez-nous",
+    "askByEmailTo": "Pour toute demande, vous pouvez nous envoyer un courriel à",
+    "sendAnEmail": "Envoyer nous un email",
+    "followUs": "Suivez-nous"
+
+  },
+  "volunteer": {
+    "title": "À la recherche de bénévoles",
+    "content": "Nous recherchons des bénévoles pour nous aider à organiser le FOSS4G Belgique. Si vous êtes intéressé, merci de nous contacter pour rejoindre l'équipe et contribuer au succès de l'événement.",
+    "contactUs": "Nous contacter"
   },
   "cards": {
     "callForTopics": {
