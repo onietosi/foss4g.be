@@ -58,16 +58,16 @@ onUnmounted(() => clearInterval(timer))
 
             <ul class="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <li class="flex flex-col items-center space-y-2">
-                    <MdiIcon icon="mdiBullhorn" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.keynotes') }}</span>
+                    <MdiIcon icon="mdiBullhorn" size="2.5em" class="text-main-color-2" />
+                    <span class="text-sm font-medium text-main-color-2">{{ $t('index.about.features.keynotes') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
-                    <MdiIcon icon="mdiAccountMultiple" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.networking') }}</span>
+                    <MdiIcon icon="mdiAccountMultiple" size="2.5em" class="text-main-color-3" />
+                    <span class="text-sm font-medium text-main-color-3">{{ $t('index.about.features.networking') }}</span>
                 </li>
                 <li class="flex flex-col items-center space-y-2">
-                    <MdiIcon icon="mdiTools" size="2.5em" />
-                    <span class="text-sm font-medium text-primary-dark">{{ $t('index.about.features.osgeoTools') }}</span>
+                    <MdiIcon icon="mdiTools" size="2.5em" class="text-main-color-4" />
+                    <span class="text-sm font-medium text-main-color-4">{{ $t('index.about.features.osgeoTools') }}</span>
                 </li>
             </ul>
 
@@ -100,7 +100,7 @@ onUnmounted(() => clearInterval(timer))
                         </p>
                         <NuxtLinkLocale
                             to="/present"
-                            class="flex justify-center border-2 border-black hover:border-primary text-black font-semibold px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition text-sm"
+                            class="flex justify-center border-2 border-main-color-2 text-main-color-2 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-2 hover:text-white transition text-sm"
                         >
                             {{ $t('cards.callForTopics.button') }}
                         </NuxtLinkLocale>
@@ -130,7 +130,7 @@ onUnmounted(() => clearInterval(timer))
                     <p class="text-sm text-neutral-dark mb-4">{{ $t('cards.callForSponsors.description') }}</p>
                     <NuxtLinkLocale
                         to="/become-sponsor"
-                        class="flex justify-center border-2 border-black text-black font-semibold px-4 py-2 rounded-lg hover:bg-gold hover:text-black hover:border-gold transition text-sm"
+                        class="flex justify-center border-2 border-main-color-3 text-main-color-3 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-3 hover:text-white transition text-sm"
                     >
                         {{ $t('cards.callForSponsors.button') }}
                     </NuxtLinkLocale>
@@ -156,7 +156,7 @@ onUnmounted(() => clearInterval(timer))
                     </p>
                     <NuxtLinkLocale
                         to="/volunteer"
-                        class="flex justify-center border-2 border-danger text-danger font-semibold px-4 py-2 rounded-lg hover:bg-danger hover:text-white transition text-sm"
+                        class="flex justify-center border-2 border-main-color-4 text-main-color-4 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-4 hover:text-white transition text-sm color4"
                     >
                         <span>{{ $t('cards.volunteers.button') }}</span>
                     </NuxtLinkLocale>
