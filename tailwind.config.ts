@@ -21,6 +21,14 @@ module.exports = {
                 'stone': '#B4BAB1',
                 'teal-light': '#859393',
                 'teal-dark': '#5D726F',
+
+                'white': '#dbdbd9fe',
+
+                'main-color-1': '#1f8e5dff', //             '#459939',
+                'main-color-2': '#ada424ff', // '#8A8317', //'#998d39',
+                'main-color-3': '#9e1a62ff', //               '#8d3999',
+                'main-color-4': '#1b22a5ff', //                '#394599',
+
                 primary: {
                     DEFAULT: '#859393',     // teal-light
                     dark: '#5D726F',        // teal-dark
