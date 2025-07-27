@@ -100,7 +100,7 @@ onUnmounted(() => clearInterval(timer))
                         </p>
                         <NuxtLinkLocale
                             to="/present"
-                            class="flex justify-center border-2 border-main-color-2 text-main-color-2 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-2 hover:text-white transition text-sm"
+                            class="flex justify-center border-2 border-main-color-3 text-main-color-3 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-3 hover:text-white transition text-sm"
                         >
                             {{ $t('cards.callForTopics.button') }}
                         </NuxtLinkLocale>
@@ -130,7 +130,7 @@ onUnmounted(() => clearInterval(timer))
                     <p class="text-sm text-neutral-dark mb-4">{{ $t('cards.callForSponsors.description') }}</p>
                     <NuxtLinkLocale
                         to="/become-sponsor"
-                        class="flex justify-center border-2 border-main-color-3 text-main-color-3 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-3 hover:text-white transition text-sm"
+                        class="flex justify-center border-2 border-main-color-2 text-main-color-2 font-semibold px-4 py-2 rounded-lg hover:bg-main-color-2 hover:text-white transition text-sm"
                     >
                         {{ $t('cards.callForSponsors.button') }}
                     </NuxtLinkLocale>
@@ -164,8 +164,8 @@ onUnmounted(() => clearInterval(timer))
 
                 <div class="w-full sm:w-2/5 h-40 sm:h-auto">
                     <img
-                        src="/images/handshake.png"
-                        alt="Handshake icon"
+                        src="/images/participate.png"
+                        alt="Volonteer icon"
                         class="w-full h-full object-contain"
                     />
                 </div>

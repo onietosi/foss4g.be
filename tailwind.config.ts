@@ -22,7 +22,7 @@ module.exports = {
                 'teal-light': '#859393',
                 'teal-dark': '#5D726F',
 
-                'white': '#dbdbd9fe',
+                'white': '#efefeefe',
 
                 'main-color-1': '#1f8e5dff', //             '#459939',
                 'main-color-2': '#ada424ff', // '#8A8317', //'#998d39',

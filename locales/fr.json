@@ -6,6 +6,7 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "callForPresentations": "Appel à présentations",
     "schedule": "Programme",
     "ourSponsors": "Nos sponsors",
     "becomeSponsor": "Devenir sponsor",
@@ -91,6 +92,9 @@
     "seconds": "Secondes"
   },
   "sponsors": {
+    "gold": "Sponsors Or",
+    "silver": "Sponsors Argent",
+    "bronze": "Sponsors Bronze",
     "hero": {
       "title": "Appel aux Sponsors",
       "description": "Nous recherchons des sponsors pour soutenir cet événement exceptionnel."

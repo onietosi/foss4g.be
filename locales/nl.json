@@ -6,6 +6,7 @@
   "nav": {
     "home": "Home",
     "about": "Over",
+    "callForPresentations": "Oproep voor Presentaties",
     "schedule": "Programma",
     "ourSponsors": "Onze Sponsors",
     "becomeSponsor": "Word Sponsor",
@@ -59,7 +60,7 @@
   },
   "cards": {
     "callForTopics": {
-      "title": "Oproep voor Onderwerpen",
+      "title": "Oproep voor Presentaties",
       "description": "Presentaties gezocht over open-source geospatiale onderwerpen. (Deadline: vrijdag 8 augustus 2025)",
       "button": "Inzenden"
     },
@@ -90,20 +91,23 @@
     "seconds": "Seconden"
   },
   "sponsors": {
+    "gold": "Gold Sponsors",
+    "silver": "Zilver Sponsors",
+    "bronze": "Brons Sponsors",
     "hero": {
       "title": "Oproep aan Sponsors",
       "description": "Wij zoeken sponsors om dit fantastische evenement te ondersteunen."
     },
     "tiers": {
       "gold": {
-        "title": "Goud",
+        "title": "Gold",
         "price": "€1.500",
         "features": [
           "Presentatiestand",
           "Programmapagina",
           "Logo op hoofdpagina"
         ],
-        "cta": "Word Goudsponsor"
+        "cta": "Word Goldsponsor"
       },
       "silver": {
         "title": "Zilver",

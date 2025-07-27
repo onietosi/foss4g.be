@@ -39,7 +39,10 @@ const tiers = [
     },
 ]
 
-const sponsors = [
+const sponsors_gold = [
+]
+
+const sponsors_silver = [
     {
         id: 1,
         name: 'Champs libres',
@@ -54,6 +57,9 @@ const sponsors = [
         logo: '/images/sponsors/geosolutions-logo.jpg',
         bgClass: 'bg-white',
     },
+]
+
+const sponsors_bronze = [
     {
         id: 3,
         name: 'Atelier Cartographique',
@@ -83,9 +89,11 @@ const sponsors = [
                     {{ $t('sponsors.footer.subtext') }}
                 </p>
 
+                <!-- h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.gold') }}</h4 -->
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in sponsors"
+                        v-for="s in sponsors_gold"
                         :key="s.id"
                         :href="s.link"
                         target="_blank"
@@ -102,6 +110,53 @@ const sponsors = [
                         />
                     </a>
                 </div>
+
+                <h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.silver') }}</h4>
+
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <a
+                        v-for="s in sponsors_silver"
+                        :key="s.id"
+                        :href="s.link"
+                        target="_blank"
+                        rel="noopener"
+                        :class="[
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:grayscale sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          s.bgClass
+                        ]"
+                    >
+                        <img
+                            :src="s.logo"
+                            :alt="`${s.name} logo`"
+                            class="pointer-events-none h-16 w-auto mb-4 object-contain transition-transform group-hover:scale-105"
+                        />
+                    </a>
+                </div>
+
+                <h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.bronze') }}</h4>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <a
+                        v-for="s in sponsors_bronze"
+                        :key="s.id"
+                        :href="s.link"
+                        target="_blank"
+                        rel="noopener"
+                        :class="[
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:grayscale sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          s.bgClass
+                        ]"
+                    >
+                        <img
+                            :src="s.logo"
+                            :alt="`${s.name} logo`"
+                            class="pointer-events-none h-16 w-auto mb-4 object-contain transition-transform group-hover:scale-105"
+                        />
+                    </a>
+                </div>
+
+
             </section>
         </main>
     </div>

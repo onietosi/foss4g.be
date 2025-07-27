@@ -6,6 +6,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "callForPresentations": "Call for Presentations",
     "schedule": "Schedule",
     "ourSponsors": "Our Sponsors",
     "becomeSponsor": "Become Sponsor",
@@ -59,7 +60,7 @@
   },
   "cards": {
     "callForTopics": {
-      "title": "Call for Topics",
+      "title": "Call for Presentations",
       "description": "Accepting presentations on open-source geospatial topics. (Deadline: Friday, 8 August 2025)",
       "button": "Submit"
     },
@@ -90,6 +91,9 @@
     "seconds": "Seconds"
   },
   "sponsors": {
+    "gold": "Gold Sponsors",
+    "silver": "Silver Sponsors",
+    "bronze": "Bronze Sponsors",
     "hero": {
       "title": "Call for Sponsors",
       "description": "We are seeking sponsors to support this fantastic event."
