@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { NuxtLink } from '#components'
-
 // array of i18n keys:
 const tiers = [
     {
@@ -39,11 +37,17 @@ const tiers = [
     },
 ]
 
+interface Sponsor {
+    id: number;
+    name: string;
+    link: string;
+    logo: string;
+    bgClass: string;
+}
 
-const sponsors_gold = [
-]
+const goldSponsors: Sponsor[] = []
 
-const sponsors_silver = [
+const silverSponsors: Sponsor[] = [
     {
         id: 1,
         name: 'Champs libres',
@@ -60,7 +64,7 @@ const sponsors_silver = [
     },
 ]
 
-const sponsors_bronze = [
+const bronzeSponsors: Sponsor[] = [
     {
         id: 3,
         name: 'Atelier Cartographique',
@@ -83,21 +87,16 @@ const sponsors_bronze = [
     <div class="min-h-screen font-sans text-primary-dark flex flex-col">
         <main class="flex-1 px-4 py-6 lg:px-8 lg:py-12 space-y-12">
             <!-- Hero -->
-            <section class="relative py-12 rounded-xl shadow max-w-5xl mx-auto text-center overflow-hidden">
-                <div
-                    class="absolute inset-0 bg-[url('/images/card-bg-1.png')] bg-cover bg-center opacity-70"
-                ></div>
-
-                <!-- Contenu au-dessus -->
-                <div class="relative z-10 px-6 inline-block bg-off-white bg-opacity-90 py-6 rounded-lg">
-                    <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">
-                        {{ $t('sponsors.hero.title') }}
-                    </h1>
-                    <p class="text-base text-neutral-dark max-w-xl mx-auto">
-                        {{ $t('sponsors.hero.description') }}
-                    </p>
-                </div>
-
+            <section class="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+                    <!-- Contenu au-dessus -->
+                    <div class="relative z-10 px-6 inline-block bg-off-white bg-opacity-90 py-6 rounded-lg">
+                        <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 mx-auto text-center">
+                            {{ $t('sponsors.hero.title') }}
+                        </h1>
+                        <p class="text-base text-neutral-dark max-w-xl mx-auto text-center">
+                            {{ $t('sponsors.hero.description') }}
+                        </p>
+                    </div>
             </section>
 
             <!-- Tier cards -->
@@ -180,11 +179,11 @@ const sponsors_bronze = [
                 </p>
 
 
-                <!-- h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.gold') }}</h4 -->
+                <h4 v-if="goldSponsors.length > 0" class="mb-2 mt-2 font-semibold">{{ $t('sponsors.gold') }}</h4>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div v-if="goldSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in sponsors_gold"
+                        v-for="s in goldSponsors"
                         :key="s.id"
                         :href="s.link"
                         target="_blank"
@@ -202,11 +201,11 @@ const sponsors_bronze = [
                     </a>
                 </div>
 
-                <h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.silver') }}</h4>
+                <h4 v-if="silverSponsors.length > 0" class="mb-2 mt-2 font-semibold">{{ $t('sponsors.silver') }}</h4>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div v-if="silverSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in sponsors_silver"
+                        v-for="s in silverSponsors"
                         :key="s.id"
                         :href="s.link"
                         target="_blank"
@@ -224,11 +223,11 @@ const sponsors_bronze = [
                     </a>
                 </div>
 
-                <h4 class="mb-2 mt-2 font-semibold">{{ $t('sponsors.bronze') }}</h4>
+                <h4 v-if="bronzeSponsors.length > 0" class="mb-2 mt-2 font-semibold">{{ $t('sponsors.bronze') }}</h4>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div v-if="bronzeSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in sponsors_bronze"
+                        v-for="s in bronzeSponsors"
                         :key="s.id"
                         :href="s.link"
                         target="_blank"
