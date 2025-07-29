@@ -36,10 +36,9 @@ jobs:
       - name: Add CNAME
         run: echo "www.foss4g.be" > .output/public/CNAME
 
-      # @TODO: Enable when ready to deploy
       # 6. Deploy to GitHub Pages
-      #- name: Deploy to GitHub Pages
-      #  uses: peaceiris/actions-gh-pages@v4
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    publish_dir: .output/public
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
