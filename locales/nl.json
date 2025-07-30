@@ -53,6 +53,46 @@
     "sendAnEmail": "Stuur een E-mail",
     "followUs": "Volg Ons"
   },
+  "present": {
+    "callToPresentations": {
+      "title": "Oproep voor Presentaties",
+      "limitDateText": "Deadline voor inzending:",
+      "limitDate": "8 augustus 2025",
+      "pleaseSubmit": "Wees een partner in het succes van de 2025 editie. Dien uw voorstel in!"
+    },
+    "overview": {
+      "title": "Overzicht",
+      "content1": "We behandelen een breed scala aan doelgroepen en onderwerpen gerelateerd aan geomatica: technologie, geek, openbare, particuliere of professionele use cases.",
+      "content2": "Ons doel? Een conferentie rijk aan diversiteit, zowel in onderwerpen als in sprekers."
+    },
+    "considerations": {
+      "title": "Enkele overwegingen",
+      "duration": "Duur: 25 min (20 min presentatie + 5 min Q&A).",
+      "explain": "Leg duidelijk uit wat je wilt delen.",
+      "message": "Focus op de boodschap en de belangrijkste technologie.",
+      "passion": "Maak je presentatie boeiend, en praat daarna verder onder het genot van een drankje."
+    },
+    "topics": {
+      "title": "Onderwerpen voor Presentaties"
+    },
+    "submission": {
+      "title": "Indienen & Formaat",
+      "presentations": "Presentaties in het Engels, Nederlands of Frans (20 min + 5 min Q&A).",
+      "proposals": "Voorstellen in FR/NL/EN.",
+      "submit": "Dien uw presentatie in"
+    },
+    "criterias": {
+      "title": "Deadline & Selectiecriteria",
+      "deadlineSubTitle": "Deadline: ",
+      "deadlineContent": "8 augustus 2025 – dien zo snel mogelijk in.",
+      "criteriasSubTitle": "Criteria: ",
+      "criteriasContent": "Kwaliteit, relevantie voor het publiek en integratie in het programma."
+    },
+    "questions": {
+      "title": "Vragen?",
+      "contactUsAt": "Neem contact met ons op via"
+    }
+  },
   "volunteer": {
     "title": "Op zoek naar Vrijwilligers",
     "content": "We zijn op zoek naar vrijwilligers om ons te helpen bij het organiseren van FOSS4G Belgium. Als je geïnteresseerd bent, neem dan contact met ons op om deel uit te maken van het team en bij te dragen aan het succes van het evenement.",

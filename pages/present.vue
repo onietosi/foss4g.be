@@ -4,32 +4,37 @@
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <!-- Title Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h2 class="text-lg font-bold mb-2">Appel à présentations</h2>
-                <p class="text-sm text-neutral-dark">Date limite de soumission: <span class="font-semibold text-danger">8 août 2025</span></p>
-                <p class="mt-2 text-sm text-neutral-dark">Soyez partenaire du succès de l'édition 2025. Soumettez votre proposition!</p>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.callToPresentations.title') }}</h2>
+                <p class="text-sm text-neutral-dark">
+                    {{ $t('present.callToPresentations.limitDateText') }}
+                    <span class="font-semibold text-main-color-3">
+                        {{ $t('present.callToPresentations.limitDate') }}
+                    </span>
+                </p>
+                <p class="mt-2 text-sm text-neutral-dark">{{ $t('present.callToPresentations.pleaseSubmit') }}</p>
             </div>
 
             <!-- Overview Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h2 class="text-lg font-bold mb-2">À propos</h2>
-                <p class="text-sm text-neutral-dark">Nous couvrons une grande variété de publics et de sujets liés à la géomatique: techno, geek, cas d’usage publics, privés ou professionnels.</p>
-                <p class="text-sm text-neutral-dark">Notre objectif? Une conférence riche en diversité, tant sur les sujets que sur les intervenants.</p>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.overview.title') }}</h2>
+                <p class="text-sm text-neutral-dark">{{ $t('present.overview.content1') }}</p>
+                <p class="mt-2 text-sm text-neutral-dark">{{ $t('present.overview.content2') }}</p>
             </div>
 
             <!-- Considerations Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h2 class="text-lg font-bold mb-2">Quelques considérations</h2>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.considerations.title') }}</h2>
                 <ul class="list-disc list-inside space-y-1 ml-4 text-sm text-neutral-dark">
-                    <li>Durée : 25 min (20 min de présentation + 5 min de Q&A).</li>
-                    <li>Expliquez clairement ce que vous souhaitez partager.</li>
-                    <li>Concentrez-vous sur le message et la technologie principale.</li>
-                    <li>Rendez votre talk passionnant, puis échanger autour d’un verre pour prolonger la discussion.</li>
+                    <li>{{ $t('present.considerations.duration') }}</li>
+                    <li>{{ $t('present.considerations.explain') }}</li>
+                    <li>{{ $t('present.considerations.message') }}</li>
+                    <li>{{ $t('present.considerations.passion') }}</li>
                 </ul>
             </div>
 
             <!-- Topics Card spanning both columns on small screens -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
-                <h2 class="text-lg font-bold mb-2">Idées de présentations</h2>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.topics.title') }}</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <div v-for="(topic, i) in topics" :key="i" class="text-sm text-neutral-dark">
                         • {{ topic }}
@@ -39,29 +44,29 @@
 
             <!-- Format & Submission Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h2 class="text-lg font-bold mb-2">Format & soumission</h2>
-                <p class="text-sm text-neutral-dark mb-4">Présentations en anglais, néerlandais ou français (20 min + 5 min Q&A). </p>
-                <p class="text-sm text-neutral-dark mb-4">Propositions en FR/NL/EN.</p>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.submission.title') }}</h2>
+                <p class="text-sm text-neutral-dark mb-4">{{ $t('present.submission.presentations') }}</p>
+                <p class="text-sm text-neutral-dark mb-4">{{ $t('present.submission.proposals') }}</p>
                 <a
                     target="_blank" rel="noopener noreferrer"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdsFUSFvC8j9vrIIGVjlYshRHLIgRMtKdjiF2V2DagdtWxDmQ/viewform"
-                    class="bg-green-600 inline-block border-2 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition text-sm"
+                    class="bg-main-color-1 inline-block border-2 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition text-sm"
                 >
-                    Soumettre ma présentation
+                    {{ $t('present.submission.submit') }}
                 </a>
             </div>
 
             <!-- Deadline & Criteria Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h2 class="text-lg font-bold mb-2">Date limite & critères</h2>
-                <p class="text-sm text-neutral-dark mb-2"><span class="font-semibold">Date limite :</span> 8 août 2025 – soumettez dès que possible.</p>
-                <p class="text-sm text-neutral-dark"><span class="font-semibold">Critères :</span> Qualité, pertinence pour le public et intégration dans le programme.</p>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.criterias.title') }}</h2>
+                <p class="text-sm text-neutral-dark mb-2"><span class="font-semibold">{{ $t('present.criterias.deadlineSubTitle') }}</span> {{ $t('present.criterias.deadlineContent') }}</p>
+                <p class="text-sm text-neutral-dark"><span class="font-semibold">{{ $t('present.criterias.criteriasSubTitle') }}</span> {{ $t('present.criterias.criteriasContent') }}</p>
             </div>
 
             <!-- Contact Card -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden">
-                <h2 class="text-lg font-bold mb-2">Des questions?</h2>
-                <p class="text-sm text-neutral-dark">Contactez-nous à <a href="mailto:presentation@foss4g.be" class="text-primary-dark underline">presentation@foss4g.be</a>.</p>
+                <h2 class="text-lg font-bold mb-2">{{ $t('present.questions.title') }}</h2>
+                <p class="text-sm text-neutral-dark">{{ $t('present.questions.contactUsAt') }} <a href="mailto:presentation@foss4g.be" class="text-primary-dark underline">presentation@foss4g.be</a>.</p>
             </div>
         </section>
     </div>

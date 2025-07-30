@@ -54,6 +54,46 @@
     "followUs": "Suivez-nous"
 
   },
+  "present": {
+    "callToPresentations": {
+      "title": "Appel à présentations",
+      "limitDateText": "Date limite de soumission:", 
+      "limitDate": "8 août 2025",
+      "pleaseSubmit": "Soyez partenaire du succès de l'édition 2025. Soumettez votre proposition!"
+    },
+    "overview": {
+      "title": "À propos",
+      "content1": "Nous couvrons une grande variété de publics et de sujets liés à la géomatique: techno, geek, cas d’usage publics, privés ou professionnels.",
+      "content2": "Notre objectif? Une conférence riche en diversité, tant sur les sujets que sur les intervenants."
+    },
+    "considerations": {
+      "title": "Quelques considérations",
+      "duration": "Durée : 25 min (20 min de présentation + 5 min de Q&A).",
+      "explain": "Expliquez clairement ce que vous souhaitez partager.",
+      "message": "Concentrez-vous sur le message et la technologie principale.",
+      "passion": "Rendez votre talk passionnant, puis échanger autour d’un verre pour prolonger la discussion."
+    },
+    "topics": {
+      "title": "Idées de présentations"
+    },
+    "submission": {
+      "title": "Format & soumission",
+      "presentations": "Présentations en anglais, néerlandais ou français (20 min + 5 min Q&A).",
+      "proposals": "Propositions en FR/NL/EN.",
+      "submit": "Soumettre ma présentation"
+    },
+    "criterias": {
+      "title": "Date limite et critères de sélection",
+      "deadlineSubTitle": "Date limite: ",
+      "deadlineContent": "8 août 2025 – soumettez dès que possible.",
+      "criteriasSubTitle": "Critères: ",
+      "criteriasContent": "Qualité, pertinence pour le public et intégration dans le programme."
+    },
+    "questions": {
+      "title": "Des questions?",
+      "contactUsAt": "Contactez-nous à"
+    }
+  },
   "volunteer": {
     "title": "À la recherche de bénévoles",
     "content": "Nous recherchons des bénévoles pour nous aider à organiser le FOSS4G Belgique. Si vous êtes intéressé, merci de nous contacter pour rejoindre l'équipe et contribuer au succès de l'événement.",
