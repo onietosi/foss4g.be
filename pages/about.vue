@@ -9,7 +9,7 @@
                     {{ $t('about.whoWeAre.content') }}
                 </p>
                 <p>
-                    <a href="https://www.osgeo.be" class="text-primary-dark underline">https://www.osgeoe.be</a>
+                    <a href="https://www.osgeo.be" class="text-primary-dark underline">https://www.osgeo.be</a>
                 </p>
             </div>
 
