@@ -73,7 +73,22 @@
       "passion": "Make your talk exciting, then continue the discussion over a drink."    
     },
     "topics": {
-      "title": "Topics"
+      "title": "Topic ideas",
+      "whatsNew": "What's new in the OSGeo world?",
+      "tools": "Open source GIS: QGIS, PostGIS, GDAL, Proj…",
+      "webdata": "Storage, processing and dissemination of web spatial data",
+      "successStories": "Successful GIS solutions using FOSS4G",
+      "solutionArchitecture": "Architecture of open source solutions",
+      "solutionManagement": "Management of geospatial solutions ",
+      "osm": "OpenStreetMap & open data",
+      "use": "Use by governments, businesses and researchers",
+      "migration": "Migration from commercial to open source solutions",
+      "chain": "FOSS4G chain: QGIS → PostGIS → GeoServer",
+      "largeDb": "Integration of QGIS & large databases ",
+      "plugins": "QGIS plugins & Python dev",
+      "analysis": "Large-scale spatial analysis",
+      "institutions": "Open source solutions for Belgian institutions",
+      "other": "Other GIS & FOSS4G topics"
     },
     "submission": {
       "title": "Format & Submission",
