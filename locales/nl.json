@@ -73,10 +73,10 @@
       "passion": "Maak je presentatie boeiend, en praat daarna verder onder het genot van een drankje."
     },
     "topics": {
-      "title": "Onderwerp idéeën",
+      "title": "Onderwerp ideeën",
       "whatsNew": "Wat is er nieuw in de OSGeo-wereld?",
       "tools": "Open source GIS: QGIS, PostGIS, GDAL, Proj…",
-      "webdata": "Opslag, verwerking en verspreiding van webruimtelijke gegevens",
+      "webdata": "Opslag, verwerking en distributie van ruimtelijke gegevens voor het web",
       "successStories": "Succesvolle GIS-oplossingen met FOSS4G",
       "solutionArchitecture": "Architectuur van open source oplossingen",
       "solutionManagement": "Beheer van geospatiale oplossingen",
