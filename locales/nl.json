@@ -73,7 +73,22 @@
       "passion": "Maak je presentatie boeiend, en praat daarna verder onder het genot van een drankje."
     },
     "topics": {
-      "title": "Onderwerpen voor Presentaties"
+      "title": "Onderwerp ideeën",
+      "whatsNew": "Wat is er nieuw in de OSGeo-wereld?",
+      "tools": "Open source GIS: QGIS, PostGIS, GDAL, Proj…",
+      "webdata": "Opslag, verwerking en distributie van ruimtelijke gegevens voor het web",
+      "successStories": "Succesvolle GIS-oplossingen met FOSS4G",
+      "solutionArchitecture": "Architectuur van open source oplossingen",
+      "solutionManagement": "Beheer van geospatiale oplossingen",
+      "osm": "OpenStreetMap & open data",
+      "use": "Gebruik door overheden, bedrijven, onderzoekers",
+      "migration": "Migratie van commercieel naar open source",
+      "chain": "FOSS4G-keten: QGIS → PostGIS → GeoServer",
+      "largeDb": "Integratie van QGIS & grote databases",
+      "plugins": "QGIS-plugins & Python-ontwikkeling",
+      "analysis": "Ruimtelijke analyse op grote schaal",
+      "institutions": "Open source oplossingen voor Belgische instellingen",
+      "other": "Andere GIS- & FOSS4G-onderwerpen"
     },
     "submission": {
       "title": "Indienen & Formaat",

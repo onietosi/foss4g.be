@@ -35,11 +35,11 @@
             <!-- Topics Card spanning both columns on small screens -->
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
                 <h2 class="text-lg font-bold mb-2">{{ $t('present.topics.title') }}</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <div v-for="(topic, i) in topics" :key="i" class="text-sm text-neutral-dark">
-                        • {{ topic }}
-                    </div>
-                </div>
+                <ul class="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-neutral-dark">
+                    <li v-for="(topic) in topics">
+                        {{ topic }}
+                    </li>
+                </ul>
             </div>
 
             <!-- Format & Submission Card -->
@@ -73,24 +73,26 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtLinkLocale } from '#components'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const topics = [
-    'Quoi de neuf dans le monde OSGeo?',
-    'SIG open source: QGIS, PostGIS, GDAL, Proj…',
-    'Stockage, traitement et diffusion de données spatiales web',
-    'Solutions SIG réussies avec FOSS4G',
-    'Architecture de solution open source',
-    'Gestion de solutions géospatiales',
-    'OpenStreetMap & données ouvertes',
-    'Usage par gouvernements, entreprises, chercheurs',
-    'Migration de commercial vers open source',
-    'Chaîne FOSS4G: QGIS → PostGIS → GeoServer',
-    'Intégration QGIS & bases volumineuses',
-    'Extensions QGIS & dev Python',
-    'Analyse spatiale à grande échelle',
-    'Solutions open source pour institutions belges',
-    'Autres sujets SIG & FOSS4G',
+    t('present.topics.whatsNew'),
+    t('present.topics.tools'),
+    t('present.topics.webdata'),
+    t('present.topics.successStories'),
+    t('present.topics.solutionArchitecture'),
+    t('present.topics.solutionManagement'),
+    t('present.topics.osm'),
+    t('present.topics.use'),
+    t('present.topics.migration'),
+    t('present.topics.chain'),
+    t('present.topics.largeDb'),
+    t('present.topics.plugins'),
+    t('present.topics.analysis'),
+    t('present.topics.institutions'),
+    t('present.topics.other'),
 ]
 </script>
 
