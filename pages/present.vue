@@ -36,21 +36,9 @@
             <div class="bg-off-white px-6 py-6 rounded-xl shadow overflow-hidden sm:col-span-2">
                 <h2 class="text-lg font-bold mb-2">{{ $t('present.topics.title') }}</h2>
                 <ul class="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-neutral-dark">
-                    <li>{{ $t('present.topics.whatsNew') }}</li>
-                    <li>{{ $t('present.topics.tools') }}</li>
-                    <li>{{ $t('present.topics.webdata') }}</li>
-                    <li>{{ $t('present.topics.successStories') }}</li>
-                    <li>{{ $t('present.topics.solutionArchitecture') }}</li>
-                    <li>{{ $t('present.topics.solutionManagement') }}</li>
-                    <li>{{ $t('present.topics.osm') }}</li>
-                    <li>{{ $t('present.topics.use') }}</li>
-                    <li>{{ $t('present.topics.migration') }}</li>
-                    <li>{{ $t('present.topics.chain') }}</li>
-                    <li>{{ $t('present.topics.largeDb') }}</li>
-                    <li>{{ $t('present.topics.plugins') }}</li>
-                    <li>{{ $t('present.topics.analysis') }}</li>
-                    <li>{{ $t('present.topics.institutions') }}</li>
-                    <li>{{ $t('present.topics.other') }}</li>
+                    <li v-for="(topic) in topics">
+                        {{ topic }}
+                    </li>
                 </ul>
             </div>
 
@@ -83,6 +71,30 @@
         </section>
     </div>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const topics = [
+    t('present.topics.whatsNew'),
+    t('present.topics.tools'),
+    t('present.topics.webdata'),
+    t('present.topics.successStories'),
+    t('present.topics.solutionArchitecture'),
+    t('present.topics.solutionManagement'),
+    t('present.topics.osm'),
+    t('present.topics.use'),
+    t('present.topics.migration'),
+    t('present.topics.chain'),
+    t('present.topics.largeDb'),
+    t('present.topics.plugins'),
+    t('present.topics.analysis'),
+    t('present.topics.institutions'),
+    t('present.topics.other'),
+]
+</script>
 
 <style>
 /* Fade transition not used here but kept for consistency */
