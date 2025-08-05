@@ -22,8 +22,10 @@
         "networking": "Community Networking",
         "osgeoTools": "OSGEO Tools"
       },
-      "learnMore": "Learn More"  
-    }
+      "learnMore": "Learn More"
+    },
+    "getYourTickets": "Get Your Tickets",
+    "address": "76 Rue du Progrès 1030 Schaerbeek"
   },
   "about": {
     "whoWeAre": {

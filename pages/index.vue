@@ -39,10 +39,25 @@ onUnmounted(() => clearInterval(timer))
                 alt="FOSS4G Logo"
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-60 object-contain"
             />
-            <div class="text-center text-white">
-                <h1 class="text-primary-dark text-2xl sm:text-2xl md:text-3xl font-extrabold mb-4">
+            <div class="text-center">
+                <div class="text-primary-dark text-2xl sm:text-2xl md:text-3xl font-extrabold mb-4">
                     {{ $t('head.subtitle') }}
-                </h1>
+                </div>
+
+                <div class="text-main-color-3 text-lg sm:text-xl font-semibold">
+                    <a class="underline" href="https://www.track.brussels/" target="_new">TRACK</a>, {{ $t('index.address') }}
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="bg-off-white py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center justify-center space-y-4"
+        >
+            <div class="text-center">
+                <div class="text-main-color-1 text-2xl sm:text-2xl md:text-2xl font-bold">
+                    <a class="underline" href="https://www.eventbrite.be/e/1447534487619" target="_new">{{ $t('index.getYourTickets') }}</a>
+                </div>
             </div>
         </section>
 
