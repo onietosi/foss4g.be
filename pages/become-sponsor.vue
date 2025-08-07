@@ -62,6 +62,13 @@ const silverSponsors: Sponsor[] = [
         logo: '/images/sponsors/geosolutions-logo.jpg',
         bgClass: 'bg-white',
     },
+    {
+        id: 5,
+        name: 'TomTom',
+        link: 'https://www.tomtom.com/',
+        logo: '/images/sponsors/tomtom_logo.svg',
+        bgClass: 'bg-white',
+    },
 ]
 
 const bronzeSponsors: Sponsor[] = [
