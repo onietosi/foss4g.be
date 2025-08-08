@@ -155,33 +155,28 @@
       "title": "Call for Sponsors",
       "description": "We are seeking sponsors to support this fantastic event."
     },
+    "features": {
+      "booth": "Presentation booth",
+      "fullProgramPage": "Full program page",
+      "halfProgramPage": "Half program page",
+      "logoOnMainPage": "Logo on main page",
+      "logoOnSponsorsPage": "Logo on sponsors page",
+      "participantList": "Attendee list"
+    },
     "tiers": {
       "gold": {
         "title": "Gold",
         "price": "€1,500",
-        "features": [
-          "Presentation booth",
-          "Program page",
-          "Main page logo"
-        ],
         "cta": "Become a Gold Sponsor"
       },
       "silver": {
         "title": "Silver",
         "price": "€750",
-        "features": [
-          "Program page",
-          "Sponsors page logo"
-        ],
         "cta": "Become a Silver Sponsor"
       },
       "bronze": {
         "title": "Bronze",
         "price": "€250",
-        "features": [
-          "Sponsors page logo",
-          "Attendee list"
-        ],
         "cta": "Become a Bronze Sponsor"
       }
     },

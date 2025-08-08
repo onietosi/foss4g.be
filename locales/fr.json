@@ -156,33 +156,28 @@
       "title": "Appel aux Sponsors",
       "description": "Nous recherchons des sponsors pour soutenir cet événement exceptionnel."
     },
+    "features": {
+      "booth": "Stand de présentation",
+      "fullProgramPage": "Page du programme",
+      "halfProgramPage": "Demi-page du programme partielle",
+      "logoOnMainPage": "Logo sur la page principale du site",
+      "logoOnSponsorsPage": "Logo sur la page des sponsors",
+      "participantList": "Liste des participants"
+    },
     "tiers": {
       "gold": {
         "title": "Or",
         "price": "1 500 €",
-        "features": [
-          "Stand de présentation",
-          "Page du programme",
-          "Logo sur la page principale"
-        ],
         "cta": "Devenir sponsor Or"
       },
       "silver": {
         "title": "Argent",
         "price": "750 €",
-        "features": [
-          "Page du programme",
-          "Logo sur la page des sponsors"
-        ],
         "cta": "Devenir sponsor Argent"
       },
       "bronze": {
         "title": "Bronze",
         "price": "250 €",
-        "features": [
-          "Logo sur la page des sponsors",
-          "Liste des participants"
-        ],
         "cta": "Devenir sponsor Bronze"
       }
     },

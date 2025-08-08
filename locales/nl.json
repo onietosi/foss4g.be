@@ -155,33 +155,28 @@
       "title": "Oproep aan Sponsors",
       "description": "Wij zoeken sponsors om dit fantastische evenement te ondersteunen."
     },
+    "features": {
+      "booth": "Presentatiestand",
+      "fullProgramPage": "Volledige programmapagina",
+      "halfProgramPage": "Halve programmapagina",
+      "logoOnMainPage": "Logo op hoofdpagina",
+      "logoOnSponsorsPage": "Logo op sponsorspagina",
+      "participantList": "Deelnemerslijst"
+    },
     "tiers": {
       "gold": {
         "title": "Gold",
         "price": "€1.500",
-        "features": [
-          "Presentatiestand",
-          "Programmapagina",
-          "Logo op hoofdpagina"
-        ],
         "cta": "Word Goldsponsor"
       },
       "silver": {
         "title": "Zilver",
         "price": "€750",
-        "features": [
-          "Programmapagina",
-          "Logo op sponsorspagina"
-        ],
         "cta": "Word Zilversponsor"
       },
       "bronze": {
         "title": "Brons",
         "price": "€250",
-        "features": [
-          "Logo op sponsorspagina",
-          "Deelnemerslijst"
-        ],
         "cta": "Word Bronsponsor"
       }
     },
