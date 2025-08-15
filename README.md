@@ -89,3 +89,6 @@ To add a sponsor:
 - add the logo in the `public/sponsors` folder
 - add a record in the `sponsors` variable in the `pages/sponsors.vue` file
 
+### Edit the schedule
+To edit the schedule:
+- edit the `schedule-data.json` file in the `assets` folder
