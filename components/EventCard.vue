@@ -53,7 +53,6 @@ import { ref } from 'vue'
 import { MdiIcon } from '#components' // ← Nuxt auto-imports this alias
 
 defineProps<{
-    key: number
     time: string
     title: string
     speaker: string
