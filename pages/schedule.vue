@@ -681,7 +681,6 @@ function isTalkExpanded(time: string, track: string): boolean {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-clamp: 2;
 }
 
 .line-clamp-3 {
@@ -689,7 +688,6 @@ function isTalkExpanded(time: string, track: string): boolean {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-clamp: 3;
 }
 
 /* Custom scrollbar for webkit browsers */
@@ -713,12 +711,25 @@ function isTalkExpanded(time: string, track: string): boolean {
 
 /* Hide scrollbar for filter buttons */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
+  display: none;
 }
 
+/* Expand transition for talk details */
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.3s ease;
+  max-height: 500px;
+  opacity: 1;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
 </style>
