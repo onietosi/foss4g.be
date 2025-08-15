@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed inset-x-0 top-0 bg-stone-light/90 backdrop-blur-md z-20">
+    <nav class="fixed inset-x-0 top-0 bg-stone-light/90 backdrop-blur-md z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <!-- Logo / Brand -->
             <NuxtLinkLocale to="/" class="text-teal-dark font-bold text-lg">
@@ -26,6 +26,15 @@
                     </li>
                     <li>
                         <NuxtLinkLocale to="/contact" class="hover:text-teal-dark">{{ $t('nav.contact') }}</NuxtLinkLocale>
+                    </li>
+                    <!-- Schedule CTA Button -->
+                    <li>
+                        <NuxtLinkLocale 
+                            to="/schedule" 
+                            class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors font-medium"
+                        >
+                            {{ $t('nav.schedule') }}
+                        </NuxtLinkLocale>
                     </li>
                     <!-- Language Picker -->
                     <li class="relative">
@@ -71,7 +80,7 @@
             <div
                 v-if="isOpen"
                 @click.self="close"
-                class="absolute inset-0 h-screen bg-stone-light/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-20"
+                class="absolute inset-0 h-screen bg-stone-light/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-50"
             >
                 <NuxtLinkLocale @click="close" to="/">{{ $t('nav.home') }}</NuxtLinkLocale>
                 <NuxtLinkLocale @click="close" to="/about">{{ $t('nav.about') }}</NuxtLinkLocale>
@@ -79,6 +88,15 @@
                 <NuxtLinkLocale @click="close" to="/become-sponsor">{{ $t('nav.becomeSponsor') }}</NuxtLinkLocale>
                 <NuxtLinkLocale @click="close" to="/volunteer">{{ $t('nav.volunteer') }}</NuxtLinkLocale>
                 <NuxtLinkLocale @click="close" to="/contact">{{ $t('nav.contact') }}</NuxtLinkLocale>
+
+                <!-- Mobile Schedule CTA Button -->
+                <NuxtLinkLocale 
+                    @click="close" 
+                    to="/schedule" 
+                    class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium text-center"
+                >
+                    {{ $t('nav.schedule') }}
+                </NuxtLinkLocale>
 
                 <!-- Mobile Language Picker -->
                 <ul class="flex space-x-4 mt-4">
