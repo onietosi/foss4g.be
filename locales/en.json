@@ -189,5 +189,42 @@
       "thankYou": "Thank you to our sponsors",
       "subtext": "Your support makes FOSS4G Belgium 2025 possible!"
     }
+  },
+  "schedule": {
+    "title": "Program",
+    "subtitle": "21 November 2024 • Brussels, Belgium",
+    "stats": {
+      "presentations": "Presentations",
+      "speakers": "Speakers", 
+      "tracks": "Tracks",
+      "duration": "Duration"
+    },
+    "search": {
+      "placeholder": "Search talks, speakers, or organizations..."
+    },
+    "filters": {
+      "allTracks": "All Tracks",
+      "track1": "Track 1",
+      "track2": "Track 2", 
+      "track3": "Track 3",
+      "talksOnly": "Talks only"
+    },
+    "upcoming": {
+      "upNext": "Up Next at"
+    },
+    "expandable": {
+      "abstract": "Abstract",
+      "minutes": "minutes",
+      "moreText": "more"
+    },
+    "languages": {
+      "english": "English",
+      "french": "French", 
+      "dutch": "Dutch"
+    },
+    "empty": {
+      "title": "No events found",
+      "description": "Try adjusting your filters or search query"
+    }
   }
 }
