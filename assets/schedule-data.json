@@ -25,28 +25,26 @@
   },
   {
     "time": "09:50",
-    "talks": [
-      {
-        "track": "track_1",
-        "title": "Community & Partnerships – EU & LATAM",
-        "speakers": [
-          {
-            "name": "Salim Baidoun",
-            "organization": "TomTom"
-          }
-        ],
-        "languages": [
-          "EN"
-        ],
-        "abstract": "In this presentation, I will discuss TomTom's engagement with open maps, open source, and open community collaboration models. I will focus specifically on our work in Belgium, as well as our broader activities across Europe and globally.",
-        "duration": 30,
-        "tags": [
-          "open data",
-          "use cases",
-          "TomTom"
-        ]
-      }
-    ]
+    "event": {
+      "title": "Community & Partnerships – EU & LATAM",
+      "speakers": [
+        {
+          "name": "Salim Baidoun",
+          "organization": "TomTom"
+        }
+      ],
+      "type": "keynote",
+      "languages": [
+        "EN"
+      ],
+      "abstract": "In this presentation, I will discuss TomTom's engagement with open maps, open source, and open community collaboration models. I will focus specifically on our work in Belgium, as well as our broader activities across Europe and globally.",
+      "duration": 30,
+      "tags": [
+        "open data",
+        "use cases",
+        "TomTom"
+      ]
+    }
   },
   {
     "time": "10:20",

@@ -44,7 +44,8 @@ enum EventType {
   MEETING = 'meeting',
   SOCIAL = 'social',
   INFO = 'info',
-  TALK = 'talk'
+  TALK = 'talk',
+  KEYNOTE = 'keynote'
 }
 
 interface EventMetadata {
@@ -280,6 +281,13 @@ function getEventMetadata(type: EventType): EventMetadata {
       bgColor: 'bg-white',
       textColor: 'text-gray-900',
       borderColor: 'border-gray-200'
+    },
+    [EventType.KEYNOTE]: {
+      type: EventType.KEYNOTE,
+      icon: 'mdiAccountVoice',
+      bgColor: 'bg-primary/5',
+      textColor: 'text-primary-dark',
+      borderColor: 'border-primary/30'
     }
   }
   
