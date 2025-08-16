@@ -1,87 +1,11 @@
 <script setup lang="ts">
-import { NuxtLink } from '#components'
+import sponsorsData from '~/assets/sponsors-data.json'
+import type { Sponsor } from '~/types/sponsors'
 
-// array of i18n keys:
-const tiers = [
-    {
-        key: 'Gold',
-        titleKey: 'sponsors.tiers.gold.title',
-        priceKey: 'sponsors.tiers.gold.price',
-        banner: 'bg-gold',
-        advantages: [
-            'sponsors.tiers.gold.features.0',
-            'sponsors.tiers.gold.features.1',
-            'sponsors.tiers.gold.features.2',
-        ],
-        ctaKey: 'sponsors.tiers.gold.cta',
-    },
-    {
-        key: 'Silver',
-        titleKey: 'sponsors.tiers.silver.title',
-        priceKey: 'sponsors.tiers.silver.price',
-        banner: 'bg-silver',
-        advantages: [
-            'sponsors.tiers.silver.features.0',
-            'sponsors.tiers.silver.features.1',
-        ],
-        ctaKey: 'sponsors.tiers.silver.cta',
-    },
-    {
-        key: 'Bronze',
-        titleKey: 'sponsors.tiers.bronze.title',
-        priceKey: 'sponsors.tiers.bronze.price',
-        banner: 'bg-bronze',
-        advantages: [
-            'sponsors.tiers.bronze.features.0',
-            'sponsors.tiers.bronze.features.1',
-        ],
-        ctaKey: 'sponsors.tiers.bronze.cta',
-    },
-]
-
-const sponsors_gold = [
-]
-
-const sponsors_silver = [
-    {
-        id: 1,
-        name: 'Champs libres',
-        link: 'https://www.champs-libres.coop',
-        logo: '/images/sponsors/champslibres-logo.svg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 2,
-        name: 'Geo Solutions',
-        link: 'https://geosolutions.be/',
-        logo: '/images/sponsors/geosolutions-logo.jpg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 5,
-        name: 'TomTom',
-        link: 'https://www.tomtom.com/',
-        logo: '/images/sponsors/tomtom_logo.svg',
-        bgClass: 'bg-white',
-    },
-]
-
-const sponsors_bronze = [
-    {
-        id: 3,
-        name: 'Atelier Cartographique',
-        link: 'https://atelier-cartographique.be/',
-        logo: '/images/sponsors/ateliercartographique-logo.svg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 4,
-        name: 'Spacebel',
-        link: 'https://www.spacebel.com/',
-        logo: '/images/sponsors/spacebel-logo.svg',
-        bgClass: 'bg-white',
-    },
-]
+// Use centralized sponsor data
+const sponsors_gold: Sponsor[] = sponsorsData.gold
+const sponsors_silver: Sponsor[] = sponsorsData.silver
+const sponsors_bronze: Sponsor[] = sponsorsData.bronze
 </script>
 
 <template>

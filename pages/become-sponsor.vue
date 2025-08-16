@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import sponsorsData from '~/assets/sponsors-data.json'
+import type { Sponsor } from '~/types/sponsors'
+
 // array of i18n keys:
 const tiers = [
     {
@@ -41,56 +44,10 @@ const tiers = [
     },
 ]
 
-interface Sponsor {
-    id: number;
-    name: string;
-    link: string;
-    logo: string;
-    bgClass: string;
-}
-
-const goldSponsors: Sponsor[] = []
-
-const silverSponsors: Sponsor[] = [
-    {
-        id: 1,
-        name: 'Champs libres',
-        link: 'https://www.champs-libres.coop',
-        logo: '/images/sponsors/champslibres-logo.svg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 2,
-        name: 'Geo Solutions',
-        link: 'https://geosolutions.be/',
-        logo: '/images/sponsors/geosolutions-logo.jpg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 5,
-        name: 'TomTom',
-        link: 'https://www.tomtom.com/',
-        logo: '/images/sponsors/tomtom_logo.svg',
-        bgClass: 'bg-white',
-    },
-]
-
-const bronzeSponsors: Sponsor[] = [
-    {
-        id: 3,
-        name: 'Atelier Cartographique',
-        link: 'https://atelier-cartographique.be/',
-        logo: '/images/sponsors/ateliercartographique-logo.svg',
-        bgClass: 'bg-white',
-    },
-    {
-        id: 4,
-        name: 'Spacebel',
-        link: 'https://www.spacebel.com/',
-        logo: '/images/sponsors/spacebel-logo.svg',
-        bgClass: 'bg-white',
-    },
-]
+// Use centralized sponsor data
+const goldSponsors: Sponsor[] = sponsorsData.gold
+const silverSponsors: Sponsor[] = sponsorsData.silver
+const bronzeSponsors: Sponsor[] = sponsorsData.bronze
 
 </script>
 
