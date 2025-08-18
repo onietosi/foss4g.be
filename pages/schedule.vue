@@ -59,9 +59,6 @@ interface EventMetadata {
 // —————————————————————————————————————————————————————————————
 // Constants
 // —————————————————————————————————————————————————————————————
-const EVENT_DATE = '21 November 2024'
-const EVENT_LOCATION = 'Brussels, Belgium'
-
 const TRACK_CONFIG = computed(() => ({
   track_1: { label: t('schedule.filters.track1'), color: 'bronze' },
   track_2: { label: t('schedule.filters.track2'), color: 'bronze' },
@@ -191,12 +188,17 @@ const filteredSchedule = computed(() => {
 const upcomingSlot = computed(() => {
   const now = new Date()
   const currentTime = now.getHours() * 60 + now.getMinutes()
-  
+
   return scheduleData.find(slot => {
     const [hours, minutes] = slot.time.split(':').map(Number)
     const slotTime = hours * 60 + minutes
     return slotTime > currentTime
   })
+})
+
+const isEventDay = computed(() => {
+  const now = new Date()
+  return now.getMonth() === 8 && now.getDate() === 25 // September (0-indexed) 25th
 })
 
 const scheduleStats = computed(() => {
@@ -316,6 +318,15 @@ function formatTimeRange(time: string, duration = 30): string {
   const formattedEndMinutes = (endMinutes % 60).toString().padStart(2, '0')
   
   return `${time} - ${endHours}:${formattedEndMinutes}`
+}
+
+function getEventDuration(eventType: EventType): number {
+  switch (eventType) {
+    case EventType.BREAK:
+      return 20 // Coffee breaks are 20 minutes
+    default:
+      return 30 // Default duration for other events
+  }
 }
 
 function isCurrentTimeSlot(time: string): boolean {
@@ -463,7 +474,7 @@ function isTalkExpanded(time: string, track: string): boolean {
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <!-- Next Event Highlight -->
-      <section v-if="upcomingSlot" class="mb-8" aria-labelledby="upcoming-heading">
+      <section v-if="upcomingSlot && isEventDay" class="mb-8" aria-labelledby="upcoming-heading">
         <div class="bg-warning/5 border border-warning/20 rounded-lg p-6">
           <div class="flex items-center gap-2 mb-4">
             <div class="w-2 h-2 bg-warning rounded-full animate-pulse" aria-hidden="true"></div>
@@ -509,7 +520,7 @@ function isTalkExpanded(time: string, track: string): boolean {
             :key="`slot-${slotIdx}`"
             :class="[
               'relative',
-              isCurrentTimeSlot(slot.time) && 'ring-2 ring-primary ring-offset-4 rounded-lg'
+              isCurrentTimeSlot(slot.time) && isEventDay && 'ring-2 ring-primary ring-offset-4 rounded-lg'
             ]"
           >
             <!-- Time Label -->
@@ -544,7 +555,7 @@ function isTalkExpanded(time: string, track: string): boolean {
                     />
                     <div class="flex-1">
                       <h3 class="text-lg font-semibold">{{ slot.event.title }}</h3>
-                      <p class="text-sm opacity-80 mt-1">{{ formatTimeRange(slot.time) }}</p>
+                      <p class="text-sm opacity-80 mt-1">{{ formatTimeRange(slot.time, getEventDuration(slot.event.type)) }}</p>
                       
                       <!-- Event Tags -->
                       <div v-if="slot.event.tags && slot.event.tags.length > 0" class="flex flex-wrap gap-1 mt-3">
@@ -570,7 +581,10 @@ function isTalkExpanded(time: string, track: string): boolean {
                   <article
                     v-if="talk"
                     @click="toggleTalkExpansion(slot.time, talk.track)"
-                    class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer"
+                    :class="[
+                      'bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer',
+                      isCurrentTimeSlot(slot.time) && isEventDay ? 'border-2 border-primary' : 'border border-gray-200'
+                    ]"
                   >
                     <!-- Track Color Header -->
                     <div
