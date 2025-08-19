@@ -87,3 +87,6 @@ If the translation key doesn't exist yet, you'll need to add it in the three dif
 ### Edit sponsors
 To edit sponsors, edit the `sponsors.json` file in the `assets/data` folder.
 
+### Edit the schedule
+To edit the schedule:
+- edit the `schedule-data.json` file in the `assets` folder

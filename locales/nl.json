@@ -189,6 +189,43 @@
       "thankYou": "Dank aan onze sponsors",
       "subtext": "Uw steun maakt FOSS4G Belgium 2025 mogelijk!"
     }
+  },
+  "schedule": {
+    "title": "Programma",
+    "subtitle": "25 september 2025 • Brussel, België",
+    "stats": {
+      "presentations": "Presentaties",
+      "speakers": "Sprekers", 
+      "tracks": "Tracks",
+      "duration": "Duur"
+    },
+    "search": {
+      "placeholder": "Zoek presentaties, sprekers of organisaties..."
+    },
+    "filters": {
+      "allTracks": "Alle Tracks",
+      "track1": "Track 1",
+      "track2": "Track 2", 
+      "track3": "Track 3",
+      "talksOnly": "Alleen presentaties"
+    },
+    "upcoming": {
+      "upNext": "Volgende om"
+    },
+    "expandable": {
+      "abstract": "Samenvatting",
+      "minutes": "minuten",
+      "moreText": "meer"
+    },
+    "languages": {
+      "english": "Engels",
+      "french": "Frans", 
+      "dutch": "Nederlands"
+    },
+    "empty": {
+      "title": "Geen evenementen gevonden",
+      "description": "Probeer je filters of zoekopdracht aan te passen"
+    }
   }
 }
 
