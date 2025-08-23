@@ -126,8 +126,6 @@ onUnmounted(() => clearInterval(timer))
             <!-- Schedule preview -->
             <div id="schedule" class="bg-primary-dark rounded-xl shadow p-5 flex flex-col">
                 <h2 class="text-lg font-bold text-white mb-3">{{ $t('cards.schedulePreview.title') }}</h2>
-                <p class="text-sm text-white mb-3">{{ $t('cards.schedulePreview.comingSoon') }}</p>
-                <!--
                 <NuxtLinkLocale
                     to="/schedule"
                     class="mt-4 inline-block bg-primary hover:bg-primary-dark text-off-white font-semibold px-4 py-2 rounded-lg transition text-sm self-start"
@@ -135,7 +133,6 @@ onUnmounted(() => clearInterval(timer))
 
                     {{ $t('cards.schedulePreview.button') }}
                 </NuxtLinkLocale>
-                -->
             </div>
 
             <!-- Call for Sponsors -->
