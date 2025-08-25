@@ -17,6 +17,13 @@
     },
     {
       "id": 3,
+      "name": "GIM",
+      "link": "https://www.gim.be/",
+      "logo": "/images/sponsors/gim-logo.svg",
+      "bgClass": "bg-white"
+    },
+    {
+      "id": 4,
       "name": "TomTom",
       "link": "https://www.tomtom.com/",
       "logo": "/images/sponsors/tomtom_logo.svg",
@@ -25,14 +32,14 @@
   ],
   "bronze": [
     {
-      "id": 4,
+      "id": 5,
       "name": "Atelier Cartographique",
       "link": "https://atelier-cartographique.be/",
       "logo": "/images/sponsors/ateliercartographique-logo.svg",
       "bgClass": "bg-white"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Spacebel",
       "link": "https://www.spacebel.com/",
       "logo": "/images/sponsors/spacebel-logo.svg",
