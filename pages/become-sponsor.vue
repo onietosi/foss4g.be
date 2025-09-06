@@ -157,7 +157,7 @@ const bronzeSponsors: Sponsor[] = sponsorsData.bronze
                         target="_blank"
                         rel="noopener"
                         :class="[
-                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter  sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
                           s.bgClass
                         ]"
                     >
