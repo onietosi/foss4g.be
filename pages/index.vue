@@ -76,7 +76,7 @@ onUnmounted(() => clearInterval(timer))
            <h2 class="text-lg font-bold mb-2 mx-8">
                 {{ $t('index.goldSponsors.thanksTo') }}
                 <NuxtLinkLocale to="/our-sponsors" class="underline text-main-color-2">
-                    {{ $t('index.goldSponsors.ourGoldSponsors') }}
+                    {{ $t('index.goldSponsors.goldSponsors') }}
                 </NuxtLinkLocale>
                 {{ $t('index.goldSponsors.whoSupportUs') }}
             </h2>
