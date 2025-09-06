@@ -151,13 +151,13 @@ const bronzeSponsors: Sponsor[] = sponsorsData.bronze
 
                 <div v-if="goldSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in goldSponsors"
-                        :key="s.id"
+                        v-for="(s, index) in goldSponsors"
+                        :key="index"
                         :href="s.link"
                         target="_blank"
                         rel="noopener"
                         :class="[
-                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:grayscale sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter  sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
                           s.bgClass
                         ]"
                     >
@@ -173,13 +173,13 @@ const bronzeSponsors: Sponsor[] = sponsorsData.bronze
 
                 <div v-if="silverSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in silverSponsors"
-                        :key="s.id"
+                        v-for="(s, index) in silverSponsors"
+                        :key="index"
                         :href="s.link"
                         target="_blank"
                         rel="noopener"
                         :class="[
-                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:grayscale sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
                           s.bgClass
                         ]"
                     >
@@ -195,13 +195,13 @@ const bronzeSponsors: Sponsor[] = sponsorsData.bronze
 
                 <div v-if="bronzeSponsors.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     <a
-                        v-for="s in bronzeSponsors"
-                        :key="s.id"
+                        v-for="(s, index) in bronzeSponsors"
+                        :key="index"
                         :href="s.link"
                         target="_blank"
                         rel="noopener"
                         :class="[
-                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:grayscale sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
                           s.bgClass
                         ]"
                     >
