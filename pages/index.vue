@@ -2,6 +2,11 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { NuxtLinkLocale} from "#components";
 
+import sponsorsData from '~/assets/sponsors-data.json'
+import type { Sponsor } from '~/types/sponsors'
+
+const sponsors_gold: Sponsor[] = sponsorsData.gold
+
 // Countdown state for 25 September 2025
 const timeLeft = ref({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 const targetDate = new Date('2025-09-25T00:00:00')
@@ -50,14 +55,55 @@ onUnmounted(() => clearInterval(timer))
             </div>
         </section>
 
-
+        <!-- Get your tickets -->
         <section
+            id="get-your-tickets"
             class="bg-off-white py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center justify-center space-y-4"
         >
             <div class="text-center">
                 <div class="text-main-color-1 text-2xl sm:text-2xl md:text-2xl font-bold">
                     <a class="underline" href="https://www.eventbrite.be/e/1447534487619" target="_new">{{ $t('index.getYourTickets') }}</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Our gold sponsors -->
+        <section
+            id="gold-sponsors"
+            class="bg-off-white py-6 rounded-xl shadow max-w-3xl mx-auto flex flex-col items-center justify-center space-y-4"
+        >
+
+           <h2 class="text-lg font-bold mb-2 mx-8">
+                {{ $t('index.goldSponsors.thanksTo') }}
+                <a class="underline text-main-color-2" href="/our-sponsors">{{ $t('index.goldSponsors.goldSponsors') }}</a>
+                {{ $t('index.goldSponsors.whoSupportUs') }}
+            </h2>
+
+            <div>
+                <a
+                    v-for="(s, index) in sponsors_gold"
+                    :key="index"
+                    :href="s.link"
+                    target="_blank"
+                    rel="noopener"
+                        :class="[
+                          'group rounded-lg border border-neutral-light p-6 flex flex-col items-center text-center transition-shadow filter  sm:opacity-60 sm:hover:filter-none sm:hover:opacity-100 sm:hover:shadow-lg',
+                          s.bgClass
+                        ]"
+                >
+                    <img
+                        :src="s.logo"
+                        :alt="`${s.name} logo`"
+                        class="pointer-events-none h-16 w-auto mb-4 object-contain transition-transform group-hover:scale-105"
+                    />
+                </a>
+            </div>
+
+            
+            <div class="w-full">
+                <p class="text-right mx-4 text-main-color-2">
+                    <a class="underline" href="/our-sponsors">{{ $t('index.goldSponsors.showSponsors') }}</a>
+                </p>
             </div>
         </section>
 
