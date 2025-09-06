@@ -75,7 +75,9 @@ onUnmounted(() => clearInterval(timer))
 
            <h2 class="text-lg font-bold mb-2 mx-8">
                 {{ $t('index.goldSponsors.thanksTo') }}
-                <a class="underline text-main-color-2" href="/our-sponsors">{{ $t('index.goldSponsors.goldSponsors') }}</a>
+                <NuxtLinkLocale to="/our-sponsors" class="underline text-main-color-2">
+                    {{ $t('index.goldSponsors.ourGoldSponsors') }}
+                </NuxtLinkLocale>
                 {{ $t('index.goldSponsors.whoSupportUs') }}
             </h2>
 
@@ -102,7 +104,9 @@ onUnmounted(() => clearInterval(timer))
             
             <div class="w-full">
                 <p class="text-right mx-4 text-main-color-2">
-                    <a class="underline" href="/our-sponsors">{{ $t('index.goldSponsors.showSponsors') }}</a>
+                    <NuxtLinkLocale to="/our-sponsors" class="underline">
+                        {{ $t('index.goldSponsors.orSeeAll') }}
+                    </NuxtLinkLocale>
                 </p>
             </div>
         </section>
