@@ -13,9 +13,6 @@
                         <NuxtLinkLocale to="/about" class="hover:text-teal-dark">{{ $t('nav.about') }}</NuxtLinkLocale>
                     </li>
                     <li>
-                        <NuxtLinkLocale to="/present" class="hover:text-teal-dark">{{ $t('nav.callForPresentations') }}</NuxtLinkLocale>
-                    </li>
-                    <li>
                         <NuxtLinkLocale to="/our-sponsors" class="hover:text-teal-dark">{{ $t('nav.ourSponsors') }}</NuxtLinkLocale>
                     </li>
                     <li>
