@@ -7,6 +7,7 @@
     "home": "Home",
     "about": "Over",
     "callForPresentations": "Oproep voor Presentaties",
+    "callForMaps": "Presenteer uw Kaart",
     "schedule": "Programma",
     "ourSponsors": "Onze Sponsors",
     "becomeSponsor": "Word Sponsor",
@@ -60,6 +61,23 @@
     "askByEmailTo": "Voor vragen kunt u ons e-mailen op",
     "sendAnEmail": "Stuur een E-mail",
     "followUs": "Volg Ons"
+  },
+  "maps": {
+    "title": "Presenteer uw Kaart", 
+    "parag_1_1": "Kaarten zijn natuurlijk onmisbaar op dit evenement ! Daarom organiseren we een FOSS4G.be Map gallery: een tentoonstelling van creatieve en inspirerende kaarten die ten minste gebruikmaken van open source tools of open data.",
+    "parag_1_2": "We nodigen u uit om een kaart in te sturen en bijdragen aan een diverse galerij. Bijdragen is eenvoudig: maak een kaart waarin u minstens één open source-technologie of open data gebruikt. Uw kaart kan het resultaat zijn van een professioneel project of een persoonlijke uitdaging.",
+    "parag_1_3": "We moedigen alle deelnemers aan om hun werk op papier in te dienen (maximale grootte : A1). Als u uw kaart niet kunt afdrukken,stuur deze via e-mail (zie instructies hieronder). Interactieve kaarten zijn ook welkom (bezorg ons gewoon de URL).",
+    "parag_1_4": "Daarnaast vragen we u om een korte beschrijving van uw kaart te geven en eventueel een korte toelichting op de gebruikte methoden, software en gegevens.",
+    "parag_1_5": "Om het eenvoudig te houden, is er maar één criterium voor het indienen van uw kaart: minstens één stap van het productieproces is uitgevoerd met behulp van open source-technologie of open data.",
+    "parag_1_6": "We nodigen alle gebruikers, ontwerpers of kaartliefhebbers uit België of daarbuiten uit om bij te dragen aan wat ongetwijfeld een geweldige kaartgalerij zal worden.",
+    "subtitle_2": "Richtlijnen voor On-Site Submission",
+    "parag_2_1": "Stuur een e-mail naar info@foss4g.be (<b>voor September 22</b>) en vraag ons om een plek voor u te reserveren in de galerij. Neem een papieren exemplaar van uw kaart mee naar de conferentie om in de galerij op te hangen. De kaartborden in de galerij zijn geschikt voor kaarten op A1-formaat. Grotere kaarten zijn niet toegestaan.",
+    "subtitle_3": "Richtlijnen voor Online Submission",
+    "parag_3_1": "Stuur uw kaart voor <b>September 22</b> via e-mail (info@foss4g.be)",
+    "parag_3_2": "Ingezonden digitale kaarten moeten aan de volgende criteria voldoen:<ul class=\"list-disc\"><li>Enkel in pdf-formaat (voeg alle lettertypen toe of converteer naar contouren).</li><li>Minimale resolutie: 2342 x 3311 pixels (we drukken de kaarten af in A1-formaat)</li></ul>",
+    "parag_3_3": "Als u een interactieve kaart hebt gemaakt, bezorg ons de URL.",
+    "subtitle_4": "Voeg deze informatie toe aan uw kaartinzending",
+    "parag_4_1": "<ul class=\"list-disc\"><li>Titel van de kaart</li><li>Naam</li><li>Datum</li><li>Organisatie</li><li>Andere auteurs van de kaart</li><li>Korte beschrijving van de kaart.Vermeld de gebruikte software en gegevens.</li><li>Screenshot (indien papieren exemplaar)</li></ul>"
   },
   "present": {
     "callToPresentations": {

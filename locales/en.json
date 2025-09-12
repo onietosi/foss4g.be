@@ -7,6 +7,7 @@
     "home": "Home",
     "about": "About",
     "callForPresentations": "Call for Presentations",
+    "callForMaps": "Call for Maps",
     "schedule": "Schedule",
     "ourSponsors": "Our Sponsors",
     "becomeSponsor": "Become a Sponsor",
@@ -60,6 +61,23 @@
     "askByEmailTo": "For any inquiries, you can email us at",
     "sendAnEmail": "Send us an Email",
     "followUs": "Follow Us"
+  },
+  "maps": {
+    "title": "Call for Maps",
+    "parag_1_1": "As a geospatial conference, maps should certainly be a part of it! That's why we decided to organise a Map Gallery: We invite contributions to the FOSS4G.be Map Gallery in order to create an exciting and vibrant exhibit of the very best in mapping. Contributing to the FOSS4G.be Map Gallery is simple: make a map involving at least open source technology or open data.",
+    "parag_1_2": "Your map can be the result of a commercial venture or a personal challenge.",
+    "parag_1_3": "We encourage all attendees to submit their work on paper (maximumsize A1). If you are unable to print your map you can send it by e-mail (see instuctions below). Interactive maps are welcome as well (please provide us with an URL).",
+    "parag_1_4": "You will also be asked to provide us with a short description of your map and possibly a brief statement of the methods, software and data you used in your map design and production.",
+    "parag_1_5": "To make it simple, there’s only one criterion : at least one step of the production process must have been achieved using open source technology or open data.",
+    "parag_1_6": "We invite all users, inventors or map creators from anywhere in Belgium or elsewhere to contribute to what will surely be an amazing Map Gallery.",
+    "subtitle_2": "On-Site Submission Guidelines",
+    "parag_2_1": "E-mail info@foss4g.be (<b>before September 22</b>) and tell us to reserve a space in the gallery for you. Bring a paper copy of your map with you to the conference to hang in the gallery. The gallery map boards accommodate A1 paper maps. Larger maps are not allowed.",
+    "subtitle_3": "Online Submission Guidelines",
+    "parag_3_1": "Submit your map by <b>September 22</b> via e-mail (info@foss4g.be).",
+    "parag_3_2": "Maps submitted online must meet the following criteria:<ul class=\"list-disc\"><li>Must be in .pdf format only (Include all fonts or convert to outlines.)</li><li>Minimum resolution: 2342 x 3311 pixels (we’ll print the maps in A1)</li></ul>",
+    "parag_3_3": "If you made an interactive map, please provide us with the URL.",
+    "subtitle_4": "Include this information with your map submission",
+    "parag_4_1": "<ul class=\"list-disc\"><li>Title of Map</li><li>Name</li><li>Date</li><li>Organization</li><li>Additional map authors</li><li>Brief description of the map. Please mention software and data used.</li><li>Screenshot (if paper copy)</li></ul>"
   },
   "present": {
     "callToPresentations": {

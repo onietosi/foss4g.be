@@ -7,6 +7,7 @@
     "home": "Accueil",
     "about": "À propos",
     "callForPresentations": "Appel à présentations",
+    "callForMaps": "Présentez votre carte",
     "schedule": "Programme",
     "ourSponsors": "Nos sponsors",
     "becomeSponsor": "Devenir sponsor",
@@ -61,6 +62,23 @@
     "sendAnEmail": "Envoyer nous un email",
     "followUs": "Suivez-nous"
 
+  },
+  "maps": {
+    "title": "Présentez votre carte", 
+    "parag_1_1": "En tant que conférence géospatiale, les cartes doivent bien sûr y avoir leur place ! C'est pourquoi nous avons décidé d'organiser une exposition de cartes : Nous vous invitons à contribuer à la FOSS4G.be Map Gallery afin de créer une exposition passionnante et dynamique présentant le meilleur de la cartographie. Pour contribuer, il suffit de créer une carte utilisant au moins une technologie Open Source ou des données en Opendata.",
+    "parag_1_2": "Votre carte peut être le résultat d'une initiative commerciale comme d'un défi personnel.",
+    "parag_1_3": "Nous encourageons les participant.e.s à soumettre leur travail sur papier (format maximum A1). Si vous ne pouvez pas imprimer votre carte, vous pouvez l'envoyer par email (voir les instructions ci-dessous). Les cartes interactives sont également les bienvenues (veillez à nous fournir une URL).",
+    "parag_1_4": "Il vous sera également demandé de nous fournir une brève description de votre carte et éventuellement une brève présentation des méthodes, des logiciels et des données que vous avez utilisés pour la conception et la production de votre carte.",
+    "parag_1_5": "Pour simplifier, le seul critère pour soumettre votre travail est le suivant : au moins une étape du processus de production doit avoir été réalisée à l'aide d'une technologie open source ou de données ouvertes.",
+    "parag_1_6": "Nous invitons tous les utilisateur.ices, inventeur.ices ou créateur.ices de cartes, de Belgique et en dehors, à contribuer à ce qui sera sans aucun doute une galerie de cartes exceptionnelle.",
+    "subtitle_2": "Directives pour les soumissions sur place",
+    "parag_2_1": "Envoyez un email à info@foss4g.be (<b>avant le 22 Septembre</b>) afin de vous réserver une place dans la galerie. Apportez une copie papier de votre carte à la conférence afin de l'afficher dans la galerie. Les panneaux de la galerie peuvent accueillir des cartes au format A1. Les cartes plus grandes ne sont pas autorisées.",
+    "subtitle_3": "Directives pour les soumissions en ligne",
+    "parag_3_1": "Envoyez votre carte avant le <b>22 Septembre</b> par e-mail (info@foss4g.be).",
+    "parag_3_2": "Les cartes envoyées en ligne doivent répondre aux critères suivants :<ul class=\"list-disc\"><li>Format .pdf uniquement (inclure toutes les polices ou les convertir en contours).</li><li>Résolution minimale : 2342 x 3311 pixels (nous imprimons les cartes au format A1).</li></ul>",
+    "parag_3_3": "Si vous avez créé une carte interactive, veuillez nous fournir l'URL.",
+    "subtitle_4": "Veuillez inclure ces informations dans l’email:",
+    "parag_4_1": "<ul class=\"list-disc\"><li>Titre de la carte</li><li>Nom</li><li>Date</li><li>Organisation</li><li>Autres auteurs de la carte</li><li>Brève description de la carte. Veuillez mentionner les logiciels et les données utilisés.</li><li>Capture d'écran (s'il s'agit d'une copie papier)</li></ul>"
   },
   "present": {
     "callToPresentations": {
