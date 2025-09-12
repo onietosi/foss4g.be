@@ -105,7 +105,7 @@ onUnmounted(() => clearInterval(timer))
             <div class="w-full">
                 <p class="text-right mx-4 text-main-color-2">
                     <NuxtLinkLocale to="/our-sponsors" class="underline">
-                        {{ $t('index.goldSponsors.orSeeAll') }}
+                        {{ $t('index.goldSponsors.showAllSponsors') }}
                     </NuxtLinkLocale>
                 </p>
             </div>
