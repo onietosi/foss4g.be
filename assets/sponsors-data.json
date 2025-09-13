@@ -51,6 +51,12 @@
       "link": "https://www.spacebel.com/",
       "logo": "/images/sponsors/spacebel-logo.svg",
       "bgClass": "bg-white"
-    }
+    },
+    {
+      "name": "NGI-IGN",
+      "link": "https://ngi.be/",
+      "logo": "/images/sponsors/ngi-logo.jpg",
+      "bgClass": "bg-white"
+    }    
   ]
 }
