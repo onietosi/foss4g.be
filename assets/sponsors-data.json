@@ -31,6 +31,18 @@
       "link": "https://www.tomtom.com/",
       "logo": "/images/sponsors/tomtom_logo.svg",
       "bgClass": "bg-white"
+    },
+   {
+      "name": "NGI-IGN",
+      "link": "https://ngi.be/",
+      "logo": "/images/sponsors/ngi-logo.jpg",
+      "bgClass": "bg-white"
+    },
+   {
+      "name": "GeoPostcodes",
+      "link": "https://www.geopostcodes.com/",
+      "logo": "/images/sponsors/geopostcodes-logo.svg",
+      "bgClass": "bg-white"
     }
   ],
   "bronze": [
