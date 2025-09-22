@@ -89,14 +89,14 @@
     "overview": {
       "title": "About",
       "content1": "We cover a wide range of audiences and topics related to geomatics: tech, geek, public use cases, private or professional.",
-      "content2": "Our goal? A conference rich in diversity, both in topics and speakers." 
+      "content2": "Our goal? A conference rich in diversity, both in topics and speakers."
     },
     "considerations": {
       "title": "Some considerations",
       "duration": "Duration: 25 min (20 min presentation + 5 min Q&A).",
       "explain": "Clearly explain what you want to share.",
       "message": "Focus on the message and the main technology.",
-      "passion": "Make your talk exciting, then continue the discussion over a drink."    
+      "passion": "Make your talk exciting, then continue the discussion over a drink."
     },
     "topics": {
       "title": "Topic ideas",
@@ -219,7 +219,7 @@
     "subtitle": "25 September 2025 • Brussels, Belgium",
     "stats": {
       "presentations": "Presentations",
-      "speakers": "Speakers", 
+      "speakers": "Speakers",
       "tracks": "Tracks",
       "duration": "Duration"
     },
@@ -228,9 +228,9 @@
     },
     "filters": {
       "allTracks": "All Tracks",
-      "track1": "Track 1",
-      "track2": "Track 2", 
-      "track3": "Track 3",
+      "track1": "GRASSpop",
+      "track2": "conDOUR",
+      "track3": "Qleur Café",
       "talksOnly": "Talks only"
     },
     "upcoming": {
@@ -243,7 +243,7 @@
     },
     "languages": {
       "english": "English",
-      "french": "French", 
+      "french": "French",
       "dutch": "Dutch"
     },
     "empty": {
